@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>1 group</span>
+                    <span>5 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">18 methods, 1 failed,  1 skipped,  16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apiTest.ValidateAddUpdateGetDeleteAPI" hash-for-method="getUpdatedAddress">getUpdatedAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apiTest.ValidateAddUpdateGetDeleteAPI" hash-for-method="deleteplace">deleteplace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +130,21 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apiTest.ValidateAddUpdateGetDeleteAPI" hash-for-method="addPlaceUsingJsonFile">addPlaceUsingJsonFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apiTest.GoogleLocationPayload" hash-for-method="addplacePayload">addplacePayload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apiTest.ValidateAddUpdateGetDeleteAPI" hash-for-method="deleteNonExistPlace">deleteNonExistPlace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apiTest.ValidatecomplexJson" hash-for-method="getCountOfCourses">getCountOfCourses</a> <!-- method navigator-link -->
@@ -132,6 +175,41 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apiTest.ValidatecomplexJson" hash-for-method="sumOfAllCoursePriceWithPurchseAmount">sumOfAllCoursePriceWithPurchseAmount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apiTest.ValidateAddUpdateGetDeleteAPI" hash-for-method="updatePlaceApi">updatePlaceApi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apiTest.GoogleLocationPayload" hash-for-method="validateAddplaceResponse">validateAddplaceResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apiTest.ValidateAddApiUsingExcel" hash-for-method="verifyAddAPIUsingExcel">verifyAddAPIUsingExcel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apiTest.ValidateAddApiUsingExcel" hash-for-method="verifyAddAPIUsingHashMap">verifyAddAPIUsingHashMap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apiTest.ValidateAddApiUsingTextFile" hash-for-method="verifyAddAPIUsingTextFile">verifyAddAPIUsingTextFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apiTest.GoogleLocationPayload" hash-for-method="verifyGetplaceWithInvalidPlaceID">verifyGetplaceWithInvalidPlaceID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apiTest.GoogleLocationPayload" hash-for-method="verifyGetplaceWithValidPlaceID">verifyGetplaceWithValidPlaceID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -144,6 +222,154 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">apiTest.ValidateAddUpdateGetDeleteAPI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUpdatedAddress">
+                  </a> <!-- getUpdatedAddress -->
+                  <span class="method-name">getUpdatedAddress</span>
+                  <div class="stack-trace">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at apiTest.ValidateAddUpdateGetDeleteAPI.getUpdatedAddress(ValidateAddUpdateGetDeleteAPI.java:60)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">apiTest.ValidateAddUpdateGetDeleteAPI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteplace">
+                  </a> <!-- deleteplace -->
+                  <span class="method-name">deleteplace</span>
+                  <div class="stack-trace">java.lang.Throwable: Method ValidateAddUpdateGetDeleteAPI.deleteplace()[pri:5, instance:apiTest.ValidateAddUpdateGetDeleteAPI@338fc1d8] depends on not successfully finished methods
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apiTest.ValidateAddApiUsingExcel</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddAPIUsingExcel">
+                  </a> <!-- verifyAddAPIUsingExcel -->
+                  <span class="method-name">verifyAddAPIUsingExcel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddAPIUsingHashMap">
+                  </a> <!-- verifyAddAPIUsingHashMap -->
+                  <span class="method-name">verifyAddAPIUsingHashMap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apiTest.GoogleLocationPayload</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addplacePayload">
+                  </a> <!-- addplacePayload -->
+                  <span class="method-name">addplacePayload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddplaceResponse">
+                  </a> <!-- validateAddplaceResponse -->
+                  <span class="method-name">validateAddplaceResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetplaceWithInvalidPlaceID">
+                  </a> <!-- verifyGetplaceWithInvalidPlaceID -->
+                  <span class="method-name">verifyGetplaceWithInvalidPlaceID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetplaceWithValidPlaceID">
+                  </a> <!-- verifyGetplaceWithValidPlaceID -->
+                  <span class="method-name">verifyGetplaceWithValidPlaceID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apiTest.ValidateAddApiUsingTextFile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddAPIUsingTextFile">
+                  </a> <!-- verifyAddAPIUsingTextFile -->
+                  <span class="method-name">verifyAddAPIUsingTextFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apiTest.ValidateAddUpdateGetDeleteAPI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPlaceUsingJsonFile">
+                  </a> <!-- addPlaceUsingJsonFile -->
+                  <span class="method-name">addPlaceUsingJsonFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteNonExistPlace">
+                  </a> <!-- deleteNonExistPlace -->
+                  <span class="method-name">deleteNonExistPlace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePlaceApi">
+                  </a> <!-- updatePlaceApi -->
+                  <span class="method-name">updatePlaceApi</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -204,20 +430,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
-  &lt;groups&gt;
-    &lt;run&gt;
-      &lt;include name=&quot;complex&quot;/&gt;
-    &lt;/run&gt;
-  &lt;/groups&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;resources.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;complex&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot; parallel=&quot;classes&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;apiTest.GoogleLocationPayload&quot;/&gt;
       &lt;class name=&quot;apiTest.ValidateAddUpdateGetDeleteAPI&quot;/&gt;
@@ -275,6 +491,54 @@
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">excel</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddAPIUsingExcel</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">hashmap</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddAPIUsingHashMap</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">parallel</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addPlaceUsingJsonFile</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteNonExistPlace</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteplace</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getUpdatedAddress</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updatePlaceApi</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">single</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddAPIUsingTextFile</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -291,36 +555,84 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(18);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getCountOfCourses')
-data.setCell(0, 2, 'apiTest.ValidatecomplexJson')
-data.setCell(0, 3, 1254);
+data.setCell(0, 1, 'verifyAddAPIUsingTextFile')
+data.setCell(0, 2, 'apiTest.ValidateAddApiUsingTextFile')
+data.setCell(0, 3, 3898);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'sumOfAllCoursePriceWithPurchseAmount')
-data.setCell(1, 2, 'apiTest.ValidatecomplexJson')
-data.setCell(1, 3, 166);
+data.setCell(1, 1, 'verifyAddAPIUsingExcel')
+data.setCell(1, 2, 'apiTest.ValidateAddApiUsingExcel')
+data.setCell(1, 3, 3880);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getCourseTitleAndPrice')
-data.setCell(2, 2, 'apiTest.ValidatecomplexJson')
-data.setCell(2, 3, 131);
+data.setCell(2, 1, 'addPlaceUsingJsonFile')
+data.setCell(2, 2, 'apiTest.ValidateAddUpdateGetDeleteAPI')
+data.setCell(2, 3, 3872);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getTitleOfFirstCourse')
-data.setCell(3, 2, 'apiTest.ValidatecomplexJson')
-data.setCell(3, 3, 77);
+data.setCell(3, 1, 'addplacePayload')
+data.setCell(3, 2, 'apiTest.GoogleLocationPayload')
+data.setCell(3, 3, 3827);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'getNumOfCopiesSoldRPA')
-data.setCell(4, 2, 'apiTest.ValidatecomplexJson')
-data.setCell(4, 3, 44);
+data.setCell(4, 1, 'deleteNonExistPlace')
+data.setCell(4, 2, 'apiTest.ValidateAddUpdateGetDeleteAPI')
+data.setCell(4, 3, 3143);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'getPurchaseAmount')
-data.setCell(5, 2, 'apiTest.ValidatecomplexJson')
-data.setCell(5, 3, 21);
+data.setCell(5, 1, 'verifyGetplaceWithValidPlaceID')
+data.setCell(5, 2, 'apiTest.GoogleLocationPayload')
+data.setCell(5, 3, 3119);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'updatePlaceApi')
+data.setCell(6, 2, 'apiTest.ValidateAddUpdateGetDeleteAPI')
+data.setCell(6, 3, 3011);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyGetplaceWithInvalidPlaceID')
+data.setCell(7, 2, 'apiTest.GoogleLocationPayload')
+data.setCell(7, 3, 2543);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'getUpdatedAddress')
+data.setCell(8, 2, 'apiTest.ValidateAddUpdateGetDeleteAPI')
+data.setCell(8, 3, 2079);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getCountOfCourses')
+data.setCell(9, 2, 'apiTest.ValidatecomplexJson')
+data.setCell(9, 3, 1672);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyAddAPIUsingHashMap')
+data.setCell(10, 2, 'apiTest.ValidateAddApiUsingExcel')
+data.setCell(10, 3, 1017);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'sumOfAllCoursePriceWithPurchseAmount')
+data.setCell(11, 2, 'apiTest.ValidatecomplexJson')
+data.setCell(11, 3, 185);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getCourseTitleAndPrice')
+data.setCell(12, 2, 'apiTest.ValidatecomplexJson')
+data.setCell(12, 3, 132);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validateAddplaceResponse')
+data.setCell(13, 2, 'apiTest.GoogleLocationPayload')
+data.setCell(13, 3, 87);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'getTitleOfFirstCourse')
+data.setCell(14, 2, 'apiTest.ValidatecomplexJson')
+data.setCell(14, 3, 74);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'getNumOfCopiesSoldRPA')
+data.setCell(15, 2, 'apiTest.ValidatecomplexJson')
+data.setCell(15, 3, 55);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'getPurchaseAmount')
+data.setCell(16, 2, 'apiTest.ValidatecomplexJson')
+data.setCell(16, 3, 30);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'deleteplace')
+data.setCell(17, 2, 'apiTest.ValidateAddUpdateGetDeleteAPI')
+data.setCell(17, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -335,53 +647,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">12 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">apiTest.ValidateAddApiUsingTextFile</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyAddAPIUsingTextFile</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">apiTest.ValidateAddApiUsingExcel</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyAddAPIUsingExcel</span>
-                <br/>
-                <span class="ignored-method-name">verifyAddAPIUsingHashMap</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">apiTest.GoogleLocationPayload</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">validateAddplaceResponse</span>
-                <br/>
-                <span class="ignored-method-name">verifyGetplaceWithInvalidPlaceID</span>
-                <br/>
-                <span class="ignored-method-name">verifyGetplaceWithValidPlaceID</span>
-                <br/>
-                <span class="ignored-method-name">addplacePayload</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">apiTest.ValidateAddUpdateGetDeleteAPI</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">addPlaceUsingJsonFile</span>
-                <br/>
-                <span class="ignored-method-name">getUpdatedAddress</span>
-                <br/>
-                <span class="ignored-method-name">deleteNonExistPlace</span>
-                <br/>
-                <span class="ignored-method-name">deleteplace</span>
-                <br/>
-                <span class="ignored-method-name">updatePlaceApi</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -390,30 +658,116 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">apiTest.GoogleLocationPayload</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addplacePayload</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">apiTest.ValidatecomplexJson</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getCountOfCourses</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTest.ValidateAddUpdateGetDeleteAPI</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addPlaceUsingJsonFile</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTest.ValidateAddApiUsingTextFile</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAddAPIUsingTextFile</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTest.ValidateAddApiUsingExcel</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAddAPIUsingExcel</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTest.ValidatecomplexJson</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getPurchaseAmount</span>
-                <span class="method-start">1269 ms</span>
+                <span class="method-start">1682 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getTitleOfFirstCourse</span>
-                <span class="method-start">1292 ms</span>
+                <span class="method-start">1714 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getCourseTitleAndPrice</span>
-                <span class="method-start">1370 ms</span>
+                <span class="method-start">1789 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getNumOfCopiesSoldRPA</span>
-                <span class="method-start">1502 ms</span>
+                <span class="method-start">1922 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sumOfAllCoursePriceWithPurchseAmount</span>
-                <span class="method-start">1547 ms</span>
+                <span class="method-start">1978 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTest.GoogleLocationPayload</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateAddplaceResponse</span>
+                <span class="method-start">3828 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTest.ValidateAddUpdateGetDeleteAPI</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">deleteNonExistPlace</span>
+                <span class="method-start">3873 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTest.ValidateAddApiUsingExcel</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAddAPIUsingHashMap</span>
+                <span class="method-start">3881 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTest.GoogleLocationPayload</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyGetplaceWithValidPlaceID</span>
+                <span class="method-start">3915 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTest.ValidateAddUpdateGetDeleteAPI</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">updatePlaceApi</span>
+                <span class="method-start">7018 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTest.GoogleLocationPayload</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyGetplaceWithInvalidPlaceID</span>
+                <span class="method-start">7035 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTest.ValidateAddUpdateGetDeleteAPI</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getUpdatedAddress</span>
+                <span class="method-start">10030 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteplace</span>
+                <span class="method-start">12119 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

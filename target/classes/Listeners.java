@@ -1,5 +1,8 @@
 package resources;
 
+import java.util.UUID;
+
+import org.apache.logging.log4j.ThreadContext;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -13,6 +16,8 @@ public class Listeners implements ITestListener {
 	ExtentReports extent=ExtentReportTest.getReportObject();
 	ThreadLocal<ExtentTest> extenttest=new ThreadLocal<ExtentTest>();
 	public void onTestStart(ITestResult result) {
+		ThreadContext.put("id", UUID.randomUUID().toString());
+		ThreadContext.put("TCname", result.getMethod().getMethodName());
 		test=extent.createTest(result.getMethod().getMethodName());
 		extenttest.set(test);
 	}
@@ -26,7 +31,7 @@ public class Listeners implements ITestListener {
 	}
 
 	public void onTestSkipped(ITestResult result) {
-	
+		extenttest.get().skip(result.getMethod().getMethodName()+"Test case is skipped due to dependent methods is facing issue");
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
@@ -42,6 +47,7 @@ public class Listeners implements ITestListener {
 	}
 
 	public void onFinish(ITestContext context) {
+		ThreadContext.clearMap();
 		extent.flush();
 	}
 

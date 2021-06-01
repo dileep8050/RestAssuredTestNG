@@ -4,19 +4,16 @@
   <listeners>
     <listener class-name="resources.Listeners"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="single"/>
-        <include name="single"/>
-      </run>
-    </groups>
+  <test thread-count="5" verbose="0" name="Test(failed)" parallel="classes">
     <classes>
-      <class name="apiTest.AddApiUsingTextFile">
+      <class name="apiTest.ValidateAddUpdateGetDeleteAPI">
         <methods>
-          <include name="verifyAddAPIUsingTextFile"/>
+          <include name="addPlaceUsingJsonFile"/>
+          <include name="getUpdatedAddress"/>
+          <include name="deleteplace"/>
+          <include name="updatePlaceApi"/>
         </methods>
-      </class> <!-- apiTest.AddApiUsingTextFile -->
+      </class> <!-- apiTest.ValidateAddUpdateGetDeleteAPI -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

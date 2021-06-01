@@ -4,7 +4,7 @@
 <listeners>
 		<listener class-name="resources.Listeners"/>
 	</listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Test" parallel="classes">
     <classes>
       <class name="apiTest.GoogleLocationPayload"/>
       <class name="apiTest.ValidateAddUpdateGetDeleteAPI"/>

@@ -22,7 +22,7 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	 * Verify Add place API using Json file for request body 
 	 */
 	
-	@Test(priority = 1)
+	@Test(priority = 1,groups = { "parallel" })
 	public void addPlaceUsingJsonFile() throws Exception
 	{	
 		log.info("addPlaceUsingJsonFile is initialzed");
@@ -36,9 +36,10 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	 *  Verify Update place API by sending new address 
 	 */
 	
-	@Test(dependsOnMethods = { "addPlaceUsingJsonFile" },priority = 2)
+	@Test(dependsOnMethods = { "addPlaceUsingJsonFile" },groups = { "parallel" },priority = 2)
 	public void updatePlaceApi() throws IOException
 	{
+		log.info("updatePlaceApi is initialzed");
 		placeid=getJsonPath(response,"place_id");
 		address="Updating my address";
 		response=apiActions.updateAPI(placeid, address, 200);
@@ -50,11 +51,13 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	/* 
 	 * Verify Get API and also validate the updated address 
 	 */
-	@Test(dependsOnMethods = { "updatePlaceApi" },groups = { "smoke" },priority = 3)
+	@Test(dependsOnMethods = { "updatePlaceApi" },groups = { "parallel" },priority = 3)
 	public void getUpdatedAddress() throws IOException
 	{
+		log.info("getUpdatedAddress is initialzed");
 		response=apiActions.getAPI(placeid, 200);
 		Assert.assertEquals(address, getJsonPath(response,"address"));
+		Assert.assertTrue(false);
 	}
 	
 	
@@ -63,9 +66,10 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	 * Verify Delete place API with existing location
 	 */
 	
-	@Test(groups = { "smoke" },priority = 4)
+	@Test(groups = { "parallel" },dependsOnMethods= {"getUpdatedAddress"},priority = 5)
 	public void deleteplace() throws IOException
 	{
+		log.info("deleteplace is initialzed");
 		response=apiActions.deleteAPI(placeid, 200);
 		Assert.assertEquals("OK", getJsonPath(response,"status"));	
 	}
@@ -76,10 +80,11 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	 * Verify Delete API with non existing address
 	 */
 	
-	@Test(groups = { "sanity" },priority = 5)
+	@Test(groups = {"parallel"},priority = 4)
 	public void deleteNonExistPlace() throws IOException
 	{
-		response=apiActions.deleteAPI("abcd", 404);
+		log.info("deleteNonExistPlace is initialzed");
+		Response response=apiActions.deleteAPI("abcd", 404);
 		Assert.assertEquals("Delete operation failed, looks like the data doesn't exists", getJsonPath(response,"msg"));	
 	}
 	

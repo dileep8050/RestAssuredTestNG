@@ -17,38 +17,46 @@ public class APIactions extends Utils {
 	RequestSpecification res;
 	Response response;
 	private static Logger log = LogManager.getLogger(APIactions.class.getName());
+	
 	public Response addAPI(String type, String apifilename) throws Exception {
-		log.info("addAPI with the filetype : "+type+" , Api file name of the api is : " +apifilename );
+		log.info("Initialize addAPI with the filetype : "+type );
 		
 			if(type=="javaclass")
 			{
-			res=given()
+				log.debug("Initialize to construct url and body is taking from the java class");
+				res=given()
 					.spec(requestSpecification())
 					.body(Payloads.addPayload());
+				log.debug("successfully constructed the url and provided the RequestSpecification back");
 			}
 			else if(type=="txtfile")
 			{
 			res=given()
 					.spec(requestSpecification())
 					.body(GetPayloadFile.txtFile(apifilename));
+			log.debug("successfully constructed the url and provided the RequestSpecification back");
+			
 			}
 			else if(type=="jsonfile")
 			{
 				res=given()
 						.spec(requestSpecification())
 						.body(GetPayloadFile.jsonFile(apifilename));
+				log.debug("successfully constructed the url and provided the RequestSpecification back");
 			}
 			else if(type=="hashmap")
 			{
 				res=given()
 						.spec(requestSpecification())
 						.body(Payloads.addpayloadHashmap());
+				log.debug("successfully constructed the url and provided the RequestSpecification back");
 			}
 			else if(type=="excelfile")
 			{
 				res=given()
 						.spec(requestSpecification())
 						.body(Payloads.dataFromExcel());
+				log.debug("successfully constructed the url and provided the RequestSpecification back");
 			}
 			
 		response=res.when().post(apiResource("AddPlaceAPI"))

@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 
 import io.restassured.builder.RequestSpecBuilder;
@@ -27,6 +29,7 @@ public class Utils {
 	
 	public static RequestSpecification req;
 	public ResponseSpecification resspec;
+	private static Logger log = LogManager.getLogger(APIactions.class.getName());
 	
 	/* To construct the url with Query params and headers
 	 * Print the logs with request and responses*/
@@ -39,6 +42,7 @@ public class Utils {
 			LocalDateTime now = LocalDateTime.now();
 			String maindir=System.getProperty("user.dir");
 			System.out.println(maindir+"\\log\\logging"+dtf.format(now)+".txt");
+			log.debug("Log file created with the name "+dtf.format(now)+".txt");
 			PrintStream log=new PrintStream(new FileOutputStream(maindir+"\\log\\logging"+dtf.format(now)+".txt"));
 			
 			req =new RequestSpecBuilder()
@@ -50,18 +54,27 @@ public class Utils {
 					.build();
 			return req;
 		}
-		return req;
+		return req;	
 	}
 	
 	/* To validate the response code based on user input */
 	public ResponseSpecification validateStauscode(int statuscode)
 	{
 		if(statuscode==200)
-		resspec=new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+		{
+			resspec=new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+			log.debug("Validation happen successfully with the status code 200 ");
+		}
 		else if(statuscode==404)
-		resspec=new ResponseSpecBuilder().expectStatusCode(404).expectContentType(ContentType.JSON).build();
+		{
+			resspec=new ResponseSpecBuilder().expectStatusCode(404).expectContentType(ContentType.JSON).build();
+			log.debug("Validation happen successfully with the status code 404 ");
+		}
 		else
+		{
 			Assert.assertEquals("Status is not handled in the staus code validation ", statuscode, 0);
+			log.error("Not handling error codes, please implement the validations");
+		}
 		return resspec;
 	}
 	
@@ -73,6 +86,7 @@ public class Utils {
 		String basepath=System.getProperty("user.dir");
 		FileInputStream fis=new FileInputStream(basepath+"\\src\\test\\java\\resources\\global.properties");
 		prop.load(fis);
+		log.info("Fetching the url from the properties file, Url : "+prop.getProperty(key));
 		return prop.getProperty(key);		
 	}
 	
@@ -82,6 +96,8 @@ public class Utils {
 	{
 		String resp= response.asString();
 		JsonPath js=new JsonPath(resp);
+		log.info("Parsing the response : "+ resp);
+		log.info("Key : value is  == "+ key +" : " +js.get(key).toString());
 		return js.get(key).toString();
 	}
 	
@@ -91,6 +107,7 @@ public class Utils {
 	{
 		APIResources resourceAPI=APIResources.valueOf(apiResource);
 		String apiRes=resourceAPI.getResource();
+		log.info("Api source is : " + apiRes);
 		return apiRes;
 	}
 
