@@ -1,0 +1,36 @@
+18:53:58.895 [main] INFO  resources.APIactions - addAPI with the filetype : hashmap , Api file name of the api is : null
+18:54:01.394 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+18:57:01.677 [main] INFO  resources.APIactions - addAPI with the filetype : excelfile , Api file name of the api is : null
+18:57:04.647 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+18:57:04.688 [main] INFO  resources.APIactions - addAPI with the filetype : hashmap , Api file name of the api is : null
+18:57:05.483 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+18:57:40.366 [main] INFO  resources.APIactions - addAPI with the filetype : excelfile , Api file name of the api is : null
+18:57:43.395 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+18:57:43.937 [main] INFO  resources.APIactions - addAPI with the filetype : hashmap , Api file name of the api is : null
+18:57:44.827 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+19:16:56.732 [main] INFO  resources.APIactions - addAPI with the filetype : javaclass , Api file name of the api is : null
+19:17:00.267 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+19:17:01.135 [main] INFO  resources.APIactions - addAPI with the filetype : nonfile , Api file name of the api is : null
+19:17:02.768 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+19:17:07.819 [main] INFO  apiTest.ValidateAddUpdateGetDeleteAPI - addPlaceUsingJsonFile is initialzed
+19:17:07.819 [main] INFO  resources.APIactions - addAPI with the filetype : jsonfile , Api file name of the api is : addplace
+19:17:08.398 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+19:17:17.994 [main] INFO  resources.APIactions - addAPI with the filetype : excelfile , Api file name of the api is : null
+19:17:19.242 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+19:17:19.271 [main] INFO  resources.APIactions - addAPI with the filetype : hashmap , Api file name of the api is : null
+19:17:20.135 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+19:17:20.167 [main] INFO  resources.APIactions - addAPI with the filetype : txtfile , Api file name of the api is : addplace
+19:17:20.725 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+13:30:05.104 [main] INFO  resources.APIactions - addAPI with the filetype : javaclass , Api file name of the api is : null
+13:30:10.299 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+13:30:11.376 [main] INFO  resources.APIactions - addAPI with the filetype : nonfile , Api file name of the api is : null
+13:30:12.171 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+13:30:17.243 [main] INFO  apiTest.ValidateAddUpdateGetDeleteAPI - addPlaceUsingJsonFile is initialzed
+13:30:17.243 [main] INFO  resources.APIactions - addAPI with the filetype : jsonfile , Api file name of the api is : addplace
+13:30:19.047 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+13:30:33.728 [main] INFO  resources.APIactions - addAPI with the filetype : excelfile , Api file name of the api is : null
+13:30:35.570 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+13:30:35.582 [main] INFO  resources.APIactions - addAPI with the filetype : hashmap , Api file name of the api is : null
+13:30:36.411 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200
+13:30:36.420 [main] INFO  resources.APIactions - addAPI with the filetype : txtfile , Api file name of the api is : addplace
+13:30:37.566 [main] INFO  resources.APIactions - Successfully added the placeAPI with the status code 200

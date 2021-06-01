@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="12" total="18" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1745" started-at="2021-06-01T13:39:33 IST" finished-at="2021-06-01T13:39:34 IST">
+    <groups>
+      <group name="complex">
+        <method signature="ValidatecomplexJson.getCountOfCourses()[pri:1, instance:apiTest.ValidatecomplexJson@1807e3f6]" name="getCountOfCourses" class="apiTest.ValidatecomplexJson"/>
+        <method signature="ValidatecomplexJson.getCourseTitleAndPrice()[pri:4, instance:apiTest.ValidatecomplexJson@1807e3f6]" name="getCourseTitleAndPrice" class="apiTest.ValidatecomplexJson"/>
+        <method signature="ValidatecomplexJson.getNumOfCopiesSoldRPA()[pri:5, instance:apiTest.ValidatecomplexJson@1807e3f6]" name="getNumOfCopiesSoldRPA" class="apiTest.ValidatecomplexJson"/>
+        <method signature="ValidatecomplexJson.getPurchaseAmount()[pri:2, instance:apiTest.ValidatecomplexJson@1807e3f6]" name="getPurchaseAmount" class="apiTest.ValidatecomplexJson"/>
+        <method signature="ValidatecomplexJson.getTitleOfFirstCourse()[pri:3, instance:apiTest.ValidatecomplexJson@1807e3f6]" name="getTitleOfFirstCourse" class="apiTest.ValidatecomplexJson"/>
+        <method signature="ValidatecomplexJson.sumOfAllCoursePriceWithPurchseAmount()[pri:6, instance:apiTest.ValidatecomplexJson@1807e3f6]" name="sumOfAllCoursePriceWithPurchseAmount" class="apiTest.ValidatecomplexJson"/>
+      </group> <!-- complex -->
+    </groups>
+    <test name="Test" duration-ms="1745" started-at="2021-06-01T13:39:33 IST" finished-at="2021-06-01T13:39:34 IST">
+      <class name="apiTest.ValidatecomplexJson">
+        <test-method status="PASS" signature="getCountOfCourses()[pri:1, instance:apiTest.ValidatecomplexJson@1807e3f6]" name="getCountOfCourses" duration-ms="1254" started-at="2021-06-01T13:39:33 IST" finished-at="2021-06-01T13:39:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCountOfCourses -->
+        <test-method status="PASS" signature="getPurchaseAmount()[pri:2, instance:apiTest.ValidatecomplexJson@1807e3f6]" name="getPurchaseAmount" duration-ms="21" started-at="2021-06-01T13:39:34 IST" finished-at="2021-06-01T13:39:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPurchaseAmount -->
+        <test-method status="PASS" signature="getTitleOfFirstCourse()[pri:3, instance:apiTest.ValidatecomplexJson@1807e3f6]" name="getTitleOfFirstCourse" duration-ms="77" started-at="2021-06-01T13:39:34 IST" finished-at="2021-06-01T13:39:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitleOfFirstCourse -->
+        <test-method status="PASS" signature="getCourseTitleAndPrice()[pri:4, instance:apiTest.ValidatecomplexJson@1807e3f6]" name="getCourseTitleAndPrice" duration-ms="131" started-at="2021-06-01T13:39:34 IST" finished-at="2021-06-01T13:39:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCourseTitleAndPrice -->
+        <test-method status="PASS" signature="getNumOfCopiesSoldRPA()[pri:5, instance:apiTest.ValidatecomplexJson@1807e3f6]" name="getNumOfCopiesSoldRPA" duration-ms="44" started-at="2021-06-01T13:39:34 IST" finished-at="2021-06-01T13:39:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumOfCopiesSoldRPA -->
+        <test-method status="PASS" signature="sumOfAllCoursePriceWithPurchseAmount()[pri:6, instance:apiTest.ValidatecomplexJson@1807e3f6]" name="sumOfAllCoursePriceWithPurchseAmount" duration-ms="166" started-at="2021-06-01T13:39:34 IST" finished-at="2021-06-01T13:39:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumOfAllCoursePriceWithPurchseAmount -->
+      </class> <!-- apiTest.ValidatecomplexJson -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
