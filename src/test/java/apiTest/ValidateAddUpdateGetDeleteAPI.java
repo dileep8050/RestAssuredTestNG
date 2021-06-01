@@ -27,8 +27,8 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	{	
 		log.info("addPlaceUsingJsonFile is initialzed");
 		apiActions=new APIactions();
-		response=apiActions.addAPI("jsonfile", "addplace");		
-		System.out.println(getJsonPath(response,"status"));
+		response=apiActions.addAPI("jsonfile", "addplace");	
+		log.info("Response we got for add place is : "+response );
 	}
 	
 	

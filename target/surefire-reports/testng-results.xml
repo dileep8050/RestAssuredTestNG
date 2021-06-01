@@ -2,7 +2,7 @@
 <testng-results skipped="1" failed="1" ignored="0" total="18" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="12159" started-at="2021-06-01T17:25:41 IST" finished-at="2021-06-01T17:25:53 IST">
+  <suite name="Suite" duration-ms="21156" started-at="2021-06-01T19:28:20 IST" finished-at="2021-06-01T19:28:42 IST">
     <groups>
       <group name="single">
         <method signature="ValidateAddApiUsingTextFile.verifyAddAPIUsingTextFile()[pri:0, instance:apiTest.ValidateAddApiUsingTextFile@48e1f6c7]" name="verifyAddAPIUsingTextFile" class="apiTest.ValidateAddApiUsingTextFile"/>
@@ -29,53 +29,49 @@
         <method signature="ValidateAddApiUsingExcel.verifyAddAPIUsingHashMap()[pri:0, instance:apiTest.ValidateAddApiUsingExcel@4722ef0c]" name="verifyAddAPIUsingHashMap" class="apiTest.ValidateAddApiUsingExcel"/>
       </group> <!-- hashmap -->
     </groups>
-    <test name="Test" duration-ms="12159" started-at="2021-06-01T17:25:41 IST" finished-at="2021-06-01T17:25:53 IST">
+    <test name="Test" duration-ms="21156" started-at="2021-06-01T19:28:20 IST" finished-at="2021-06-01T19:28:42 IST">
       <class name="apiTest.ValidateAddApiUsingTextFile">
-        <test-method status="PASS" signature="verifyAddAPIUsingTextFile()[pri:0, instance:apiTest.ValidateAddApiUsingTextFile@48e1f6c7]" name="verifyAddAPIUsingTextFile" duration-ms="3898" started-at="2021-06-01T17:25:41 IST" finished-at="2021-06-01T17:25:45 IST">
+        <test-method status="PASS" signature="verifyAddAPIUsingTextFile()[pri:0, instance:apiTest.ValidateAddApiUsingTextFile@48e1f6c7]" name="verifyAddAPIUsingTextFile" duration-ms="575" started-at="2021-06-01T19:28:41 IST" finished-at="2021-06-01T19:28:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddAPIUsingTextFile -->
       </class> <!-- apiTest.ValidateAddApiUsingTextFile -->
       <class name="apiTest.ValidatecomplexJson">
-        <test-method status="PASS" signature="getCountOfCourses()[pri:1, instance:apiTest.ValidatecomplexJson@55cb6996]" name="getCountOfCourses" duration-ms="1672" started-at="2021-06-01T17:25:41 IST" finished-at="2021-06-01T17:25:42 IST">
+        <test-method status="PASS" signature="getCountOfCourses()[pri:1, instance:apiTest.ValidatecomplexJson@55cb6996]" name="getCountOfCourses" duration-ms="16" started-at="2021-06-01T19:28:41 IST" finished-at="2021-06-01T19:28:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCountOfCourses -->
-        <test-method status="PASS" signature="getPurchaseAmount()[pri:2, instance:apiTest.ValidatecomplexJson@55cb6996]" name="getPurchaseAmount" duration-ms="30" started-at="2021-06-01T17:25:42 IST" finished-at="2021-06-01T17:25:42 IST">
+        <test-method status="PASS" signature="getPurchaseAmount()[pri:2, instance:apiTest.ValidatecomplexJson@55cb6996]" name="getPurchaseAmount" duration-ms="10" started-at="2021-06-01T19:28:41 IST" finished-at="2021-06-01T19:28:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPurchaseAmount -->
-        <test-method status="PASS" signature="getTitleOfFirstCourse()[pri:3, instance:apiTest.ValidatecomplexJson@55cb6996]" name="getTitleOfFirstCourse" duration-ms="74" started-at="2021-06-01T17:25:42 IST" finished-at="2021-06-01T17:25:42 IST">
+        <test-method status="PASS" signature="getTitleOfFirstCourse()[pri:3, instance:apiTest.ValidatecomplexJson@55cb6996]" name="getTitleOfFirstCourse" duration-ms="48" started-at="2021-06-01T19:28:41 IST" finished-at="2021-06-01T19:28:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTitleOfFirstCourse -->
-        <test-method status="PASS" signature="getCourseTitleAndPrice()[pri:4, instance:apiTest.ValidatecomplexJson@55cb6996]" name="getCourseTitleAndPrice" duration-ms="132" started-at="2021-06-01T17:25:42 IST" finished-at="2021-06-01T17:25:43 IST">
+        <test-method status="PASS" signature="getCourseTitleAndPrice()[pri:4, instance:apiTest.ValidatecomplexJson@55cb6996]" name="getCourseTitleAndPrice" duration-ms="85" started-at="2021-06-01T19:28:41 IST" finished-at="2021-06-01T19:28:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCourseTitleAndPrice -->
-        <test-method status="PASS" signature="getNumOfCopiesSoldRPA()[pri:5, instance:apiTest.ValidatecomplexJson@55cb6996]" name="getNumOfCopiesSoldRPA" duration-ms="55" started-at="2021-06-01T17:25:43 IST" finished-at="2021-06-01T17:25:43 IST">
+        <test-method status="PASS" signature="getNumOfCopiesSoldRPA()[pri:5, instance:apiTest.ValidatecomplexJson@55cb6996]" name="getNumOfCopiesSoldRPA" duration-ms="53" started-at="2021-06-01T19:28:41 IST" finished-at="2021-06-01T19:28:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getNumOfCopiesSoldRPA -->
-        <test-method status="PASS" signature="sumOfAllCoursePriceWithPurchseAmount()[pri:6, instance:apiTest.ValidatecomplexJson@55cb6996]" name="sumOfAllCoursePriceWithPurchseAmount" duration-ms="185" started-at="2021-06-01T17:25:43 IST" finished-at="2021-06-01T17:25:43 IST">
+        <test-method status="PASS" signature="sumOfAllCoursePriceWithPurchseAmount()[pri:6, instance:apiTest.ValidatecomplexJson@55cb6996]" name="sumOfAllCoursePriceWithPurchseAmount" duration-ms="141" started-at="2021-06-01T19:28:41 IST" finished-at="2021-06-01T19:28:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sumOfAllCoursePriceWithPurchseAmount -->
       </class> <!-- apiTest.ValidatecomplexJson -->
       <class name="apiTest.ValidateAddUpdateGetDeleteAPI">
-        <test-method status="PASS" signature="addPlaceUsingJsonFile()[pri:1, instance:apiTest.ValidateAddUpdateGetDeleteAPI@338fc1d8]" name="addPlaceUsingJsonFile" duration-ms="3872" started-at="2021-06-01T17:25:41 IST" finished-at="2021-06-01T17:25:45 IST">
+        <test-method status="PASS" signature="addPlaceUsingJsonFile()[pri:1, instance:apiTest.ValidateAddUpdateGetDeleteAPI@338fc1d8]" name="addPlaceUsingJsonFile" duration-ms="553" started-at="2021-06-01T19:28:30 IST" finished-at="2021-06-01T19:28:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPlaceUsingJsonFile -->
-        <test-method status="PASS" signature="deleteNonExistPlace()[pri:4, instance:apiTest.ValidateAddUpdateGetDeleteAPI@338fc1d8]" name="deleteNonExistPlace" duration-ms="3143" started-at="2021-06-01T17:25:45 IST" finished-at="2021-06-01T17:25:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteNonExistPlace -->
-        <test-method status="PASS" signature="updatePlaceApi()[pri:2, instance:apiTest.ValidateAddUpdateGetDeleteAPI@338fc1d8]" name="updatePlaceApi" duration-ms="3011" started-at="2021-06-01T17:25:48 IST" depends-on-methods="apiTest.ValidateAddUpdateGetDeleteAPI.addPlaceUsingJsonFile" finished-at="2021-06-01T17:25:51 IST">
+        <test-method status="PASS" signature="updatePlaceApi()[pri:2, instance:apiTest.ValidateAddUpdateGetDeleteAPI@338fc1d8]" name="updatePlaceApi" duration-ms="2414" started-at="2021-06-01T19:28:31 IST" depends-on-methods="apiTest.ValidateAddUpdateGetDeleteAPI.addPlaceUsingJsonFile" finished-at="2021-06-01T19:28:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatePlaceApi -->
-        <test-method status="FAIL" signature="getUpdatedAddress()[pri:3, instance:apiTest.ValidateAddUpdateGetDeleteAPI@338fc1d8]" name="getUpdatedAddress" duration-ms="2079" started-at="2021-06-01T17:25:51 IST" depends-on-methods="apiTest.ValidateAddUpdateGetDeleteAPI.updatePlaceApi" finished-at="2021-06-01T17:25:53 IST">
+        <test-method status="FAIL" signature="getUpdatedAddress()[pri:3, instance:apiTest.ValidateAddUpdateGetDeleteAPI@338fc1d8]" name="getUpdatedAddress" duration-ms="2232" started-at="2021-06-01T19:28:33 IST" depends-on-methods="apiTest.ValidateAddUpdateGetDeleteAPI.updatePlaceApi" finished-at="2021-06-01T19:28:36 IST">
           <exception class="java.lang.AssertionError">
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError
@@ -95,16 +91,37 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUpdatedAddress -->
-        <test-method status="SKIP" signature="deleteplace()[pri:5, instance:apiTest.ValidateAddUpdateGetDeleteAPI@338fc1d8]" name="deleteplace" duration-ms="0" started-at="2021-06-01T17:25:53 IST" depends-on-methods="apiTest.ValidateAddUpdateGetDeleteAPI.getUpdatedAddress" finished-at="2021-06-01T17:25:53 IST">
+        <test-method status="PASS" signature="deleteNonExistPlace()[pri:4, instance:apiTest.ValidateAddUpdateGetDeleteAPI@338fc1d8]" name="deleteNonExistPlace" duration-ms="2560" started-at="2021-06-01T19:28:36 IST" finished-at="2021-06-01T19:28:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNonExistPlace -->
+        <test-method status="SKIP" signature="deleteplace()[pri:5, instance:apiTest.ValidateAddUpdateGetDeleteAPI@338fc1d8]" name="deleteplace" duration-ms="0" started-at="2021-06-01T19:28:38 IST" depends-on-methods="apiTest.ValidateAddUpdateGetDeleteAPI.getUpdatedAddress" finished-at="2021-06-01T19:28:38 IST">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method ValidateAddUpdateGetDeleteAPI.deleteplace()[pri:5, instance:apiTest.ValidateAddUpdateGetDeleteAPI@338fc1d8] depends on not successfully finished methods]]>
@@ -114,9 +131,26 @@ at java.lang.Thread.run(Thread.java:748)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.Throwable -->
@@ -125,29 +159,29 @@ at java.lang.Thread.run(Thread.java:748)
         </test-method> <!-- deleteplace -->
       </class> <!-- apiTest.ValidateAddUpdateGetDeleteAPI -->
       <class name="apiTest.GoogleLocationPayload">
-        <test-method status="PASS" signature="addplacePayload()[pri:1, instance:apiTest.GoogleLocationPayload@eadd4fb]" name="addplacePayload" duration-ms="3827" started-at="2021-06-01T17:25:41 IST" finished-at="2021-06-01T17:25:44 IST">
+        <test-method status="PASS" signature="addplacePayload()[pri:1, instance:apiTest.GoogleLocationPayload@eadd4fb]" name="addplacePayload" duration-ms="3991" started-at="2021-06-01T19:28:20 IST" finished-at="2021-06-01T19:28:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addplacePayload -->
-        <test-method status="PASS" signature="validateAddplaceResponse()[pri:2, instance:apiTest.GoogleLocationPayload@eadd4fb]" name="validateAddplaceResponse" duration-ms="87" started-at="2021-06-01T17:25:44 IST" finished-at="2021-06-01T17:25:45 IST">
+        <test-method status="PASS" signature="validateAddplaceResponse()[pri:2, instance:apiTest.GoogleLocationPayload@eadd4fb]" name="validateAddplaceResponse" duration-ms="979" started-at="2021-06-01T19:28:24 IST" finished-at="2021-06-01T19:28:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAddplaceResponse -->
-        <test-method status="PASS" signature="verifyGetplaceWithValidPlaceID()[pri:3, instance:apiTest.GoogleLocationPayload@eadd4fb]" name="verifyGetplaceWithValidPlaceID" duration-ms="3119" started-at="2021-06-01T17:25:45 IST" finished-at="2021-06-01T17:25:48 IST">
+        <test-method status="PASS" signature="verifyGetplaceWithValidPlaceID()[pri:3, instance:apiTest.GoogleLocationPayload@eadd4fb]" name="verifyGetplaceWithValidPlaceID" duration-ms="2794" started-at="2021-06-01T19:28:25 IST" finished-at="2021-06-01T19:28:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetplaceWithValidPlaceID -->
-        <test-method status="PASS" signature="verifyGetplaceWithInvalidPlaceID()[pri:4, instance:apiTest.GoogleLocationPayload@eadd4fb]" name="verifyGetplaceWithInvalidPlaceID" duration-ms="2543" started-at="2021-06-01T17:25:48 IST" finished-at="2021-06-01T17:25:50 IST">
+        <test-method status="PASS" signature="verifyGetplaceWithInvalidPlaceID()[pri:4, instance:apiTest.GoogleLocationPayload@eadd4fb]" name="verifyGetplaceWithInvalidPlaceID" duration-ms="2062" started-at="2021-06-01T19:28:28 IST" finished-at="2021-06-01T19:28:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetplaceWithInvalidPlaceID -->
       </class> <!-- apiTest.GoogleLocationPayload -->
       <class name="apiTest.ValidateAddApiUsingExcel">
-        <test-method status="PASS" signature="verifyAddAPIUsingExcel()[pri:0, instance:apiTest.ValidateAddApiUsingExcel@4722ef0c]" name="verifyAddAPIUsingExcel" duration-ms="3880" started-at="2021-06-01T17:25:41 IST" finished-at="2021-06-01T17:25:45 IST">
+        <test-method status="PASS" signature="verifyAddAPIUsingExcel()[pri:0, instance:apiTest.ValidateAddApiUsingExcel@4722ef0c]" name="verifyAddAPIUsingExcel" duration-ms="1532" started-at="2021-06-01T19:28:38 IST" finished-at="2021-06-01T19:28:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddAPIUsingExcel -->
-        <test-method status="PASS" signature="verifyAddAPIUsingHashMap()[pri:0, instance:apiTest.ValidateAddApiUsingExcel@4722ef0c]" name="verifyAddAPIUsingHashMap" duration-ms="1017" started-at="2021-06-01T17:25:45 IST" finished-at="2021-06-01T17:25:46 IST">
+        <test-method status="PASS" signature="verifyAddAPIUsingHashMap()[pri:0, instance:apiTest.ValidateAddApiUsingExcel@4722ef0c]" name="verifyAddAPIUsingHashMap" duration-ms="1022" started-at="2021-06-01T19:28:40 IST" finished-at="2021-06-01T19:28:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddAPIUsingHashMap -->

@@ -96,8 +96,8 @@ public class Utils {
 	{
 		String resp= response.asString();
 		JsonPath js=new JsonPath(resp);
-		log.info("Parsing the response : "+ resp);
-		log.info("Key : value is  == "+ key +" : " +js.get(key).toString());
+		log.info("Response is : "+ resp);
+		log.info("Request key is : "+ key +" and the value is : " +js.get(key).toString());
 		return js.get(key).toString();
 	}
 	
@@ -107,7 +107,7 @@ public class Utils {
 	{
 		APIResources resourceAPI=APIResources.valueOf(apiResource);
 		String apiRes=resourceAPI.getResource();
-		log.info("Api source is : " + apiRes);
+		log.info("Url constructed with the resource :"+apiResource+" == " + apiRes);
 		return apiRes;
 	}
 

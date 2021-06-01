@@ -238,10 +238,8 @@
 	at org.junit.Assert.assertTrue(Assert.java:42)
 	at org.junit.Assert.assertTrue(Assert.java:53)
 	at apiTest.ValidateAddUpdateGetDeleteAPI.getUpdatedAddress(ValidateAddUpdateGetDeleteAPI.java:60)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 12 stack frames
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -259,10 +257,8 @@
                   </a> <!-- deleteplace -->
                   <span class="method-name">deleteplace</span>
                   <div class="stack-trace">java.lang.Throwable: Method ValidateAddUpdateGetDeleteAPI.deleteplace()[pri:5, instance:apiTest.ValidateAddUpdateGetDeleteAPI@338fc1d8] depends on not successfully finished methods
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 3 stack frames
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 22 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -433,7 +429,7 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;resources.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot; parallel=&quot;classes&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;apiTest.GoogleLocationPayload&quot;/&gt;
       &lt;class name=&quot;apiTest.ValidateAddUpdateGetDeleteAPI&quot;/&gt;
@@ -557,73 +553,73 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(18);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyAddAPIUsingTextFile')
-data.setCell(0, 2, 'apiTest.ValidateAddApiUsingTextFile')
-data.setCell(0, 3, 3898);
+data.setCell(0, 1, 'addplacePayload')
+data.setCell(0, 2, 'apiTest.GoogleLocationPayload')
+data.setCell(0, 3, 3991);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyAddAPIUsingExcel')
-data.setCell(1, 2, 'apiTest.ValidateAddApiUsingExcel')
-data.setCell(1, 3, 3880);
+data.setCell(1, 1, 'verifyGetplaceWithValidPlaceID')
+data.setCell(1, 2, 'apiTest.GoogleLocationPayload')
+data.setCell(1, 3, 2794);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addPlaceUsingJsonFile')
+data.setCell(2, 1, 'deleteNonExistPlace')
 data.setCell(2, 2, 'apiTest.ValidateAddUpdateGetDeleteAPI')
-data.setCell(2, 3, 3872);
+data.setCell(2, 3, 2560);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'addplacePayload')
-data.setCell(3, 2, 'apiTest.GoogleLocationPayload')
-data.setCell(3, 3, 3827);
+data.setCell(3, 1, 'updatePlaceApi')
+data.setCell(3, 2, 'apiTest.ValidateAddUpdateGetDeleteAPI')
+data.setCell(3, 3, 2414);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'deleteNonExistPlace')
+data.setCell(4, 1, 'getUpdatedAddress')
 data.setCell(4, 2, 'apiTest.ValidateAddUpdateGetDeleteAPI')
-data.setCell(4, 3, 3143);
+data.setCell(4, 3, 2232);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyGetplaceWithValidPlaceID')
+data.setCell(5, 1, 'verifyGetplaceWithInvalidPlaceID')
 data.setCell(5, 2, 'apiTest.GoogleLocationPayload')
-data.setCell(5, 3, 3119);
+data.setCell(5, 3, 2062);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'updatePlaceApi')
-data.setCell(6, 2, 'apiTest.ValidateAddUpdateGetDeleteAPI')
-data.setCell(6, 3, 3011);
+data.setCell(6, 1, 'verifyAddAPIUsingExcel')
+data.setCell(6, 2, 'apiTest.ValidateAddApiUsingExcel')
+data.setCell(6, 3, 1532);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyGetplaceWithInvalidPlaceID')
-data.setCell(7, 2, 'apiTest.GoogleLocationPayload')
-data.setCell(7, 3, 2543);
+data.setCell(7, 1, 'verifyAddAPIUsingHashMap')
+data.setCell(7, 2, 'apiTest.ValidateAddApiUsingExcel')
+data.setCell(7, 3, 1022);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'getUpdatedAddress')
-data.setCell(8, 2, 'apiTest.ValidateAddUpdateGetDeleteAPI')
-data.setCell(8, 3, 2079);
+data.setCell(8, 1, 'validateAddplaceResponse')
+data.setCell(8, 2, 'apiTest.GoogleLocationPayload')
+data.setCell(8, 3, 979);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'getCountOfCourses')
-data.setCell(9, 2, 'apiTest.ValidatecomplexJson')
-data.setCell(9, 3, 1672);
+data.setCell(9, 1, 'verifyAddAPIUsingTextFile')
+data.setCell(9, 2, 'apiTest.ValidateAddApiUsingTextFile')
+data.setCell(9, 3, 575);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyAddAPIUsingHashMap')
-data.setCell(10, 2, 'apiTest.ValidateAddApiUsingExcel')
-data.setCell(10, 3, 1017);
+data.setCell(10, 1, 'addPlaceUsingJsonFile')
+data.setCell(10, 2, 'apiTest.ValidateAddUpdateGetDeleteAPI')
+data.setCell(10, 3, 553);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'sumOfAllCoursePriceWithPurchseAmount')
 data.setCell(11, 2, 'apiTest.ValidatecomplexJson')
-data.setCell(11, 3, 185);
+data.setCell(11, 3, 141);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'getCourseTitleAndPrice')
 data.setCell(12, 2, 'apiTest.ValidatecomplexJson')
-data.setCell(12, 3, 132);
+data.setCell(12, 3, 85);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'validateAddplaceResponse')
-data.setCell(13, 2, 'apiTest.GoogleLocationPayload')
-data.setCell(13, 3, 87);
+data.setCell(13, 1, 'getNumOfCopiesSoldRPA')
+data.setCell(13, 2, 'apiTest.ValidatecomplexJson')
+data.setCell(13, 3, 53);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'getTitleOfFirstCourse')
 data.setCell(14, 2, 'apiTest.ValidatecomplexJson')
-data.setCell(14, 3, 74);
+data.setCell(14, 3, 48);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'getNumOfCopiesSoldRPA')
+data.setCell(15, 1, 'getCountOfCourses')
 data.setCell(15, 2, 'apiTest.ValidatecomplexJson')
-data.setCell(15, 3, 55);
+data.setCell(15, 3, 16);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'getPurchaseAmount')
 data.setCell(16, 2, 'apiTest.ValidatecomplexJson')
-data.setCell(16, 3, 30);
+data.setCell(16, 3, 10);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'deleteplace')
 data.setCell(17, 2, 'apiTest.ValidateAddUpdateGetDeleteAPI')
@@ -632,7 +628,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -663,111 +659,87 @@ return data;
                 <span class="method-name">addplacePayload</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apiTest.ValidatecomplexJson</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">getCountOfCourses</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">validateAddplaceResponse</span>
+                <span class="method-start">3998 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetplaceWithValidPlaceID</span>
+                <span class="method-start">4978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetplaceWithInvalidPlaceID</span>
+                <span class="method-start">7773 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apiTest.ValidateAddUpdateGetDeleteAPI</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">addPlaceUsingJsonFile</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">9836 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apiTest.ValidateAddApiUsingTextFile</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyAddAPIUsingTextFile</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">updatePlaceApi</span>
+                <span class="method-start">10393 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getUpdatedAddress</span>
+                <span class="method-start">12808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteNonExistPlace</span>
+                <span class="method-start">15053 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteplace</span>
+                <span class="method-start">17614 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apiTest.ValidateAddApiUsingExcel</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyAddAPIUsingExcel</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">17615 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAddAPIUsingHashMap</span>
+                <span class="method-start">19148 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTest.ValidateAddApiUsingTextFile</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAddAPIUsingTextFile</span>
+                <span class="method-start">20171 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apiTest.ValidatecomplexJson</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <span class="method-name">getCountOfCourses</span>
+                <span class="method-start">20748 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">getPurchaseAmount</span>
-                <span class="method-start">1682 ms</span>
+                <span class="method-start">20765 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getTitleOfFirstCourse</span>
-                <span class="method-start">1714 ms</span>
+                <span class="method-start">20776 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getCourseTitleAndPrice</span>
-                <span class="method-start">1789 ms</span>
+                <span class="method-start">20824 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getNumOfCopiesSoldRPA</span>
-                <span class="method-start">1922 ms</span>
+                <span class="method-start">20910 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sumOfAllCoursePriceWithPurchseAmount</span>
-                <span class="method-start">1978 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apiTest.GoogleLocationPayload</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">validateAddplaceResponse</span>
-                <span class="method-start">3828 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apiTest.ValidateAddUpdateGetDeleteAPI</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">deleteNonExistPlace</span>
-                <span class="method-start">3873 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apiTest.ValidateAddApiUsingExcel</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyAddAPIUsingHashMap</span>
-                <span class="method-start">3881 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apiTest.GoogleLocationPayload</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyGetplaceWithValidPlaceID</span>
-                <span class="method-start">3915 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apiTest.ValidateAddUpdateGetDeleteAPI</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">updatePlaceApi</span>
-                <span class="method-start">7018 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apiTest.GoogleLocationPayload</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyGetplaceWithInvalidPlaceID</span>
-                <span class="method-start">7035 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apiTest.ValidateAddUpdateGetDeleteAPI</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">getUpdatedAddress</span>
-                <span class="method-start">10030 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">deleteplace</span>
-                <span class="method-start">12119 ms</span>
+                <span class="method-start">20964 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

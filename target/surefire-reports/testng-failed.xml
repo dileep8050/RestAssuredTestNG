@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="resources.Listeners"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="Test(failed)" parallel="classes">
+  <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
       <class name="apiTest.ValidateAddUpdateGetDeleteAPI">
         <methods>
