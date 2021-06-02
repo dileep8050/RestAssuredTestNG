@@ -3,6 +3,7 @@ package apiTest;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -15,6 +16,7 @@ public class GoogleLocationPayload extends Utils {
 	RequestSpecification res;
 	APIactions apiActions;
 	private static Logger log = LogManager.getLogger(GoogleLocationPayload.class.getName());
+	
 	@Test(priority=1)
 	public void addplacePayload() throws Exception
 	{

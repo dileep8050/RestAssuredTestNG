@@ -5,6 +5,9 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import io.restassured.response.Response;
 import resources.APIactions;
@@ -18,22 +21,26 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	String placeid;
 	private static Logger log = LogManager.getLogger(ValidateAddUpdateGetDeleteAPI.class.getName());
 	
+	
 	/* 
 	 * Verify Add place API using Json file for request body 
+	 * 
 	 */
-	
+
+
 	@Test(priority = 1,groups = { "parallel" })
 	public void addPlaceUsingJsonFile() throws Exception
 	{	
 		log.info("addPlaceUsingJsonFile is initialzed");
 		apiActions=new APIactions();
+		apiActions=new APIactions();
 		response=apiActions.addAPI("jsonfile", "addplace");	
-		log.info("Response we got for add place is : "+response );
 	}
 	
 	
 	/*
 	 *  Verify Update place API by sending new address 
+	 *  
 	 */
 	
 	@Test(dependsOnMethods = { "addPlaceUsingJsonFile" },groups = { "parallel" },priority = 2)
@@ -50,6 +57,7 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	
 	/* 
 	 * Verify Get API and also validate the updated address 
+	 * 
 	 */
 	@Test(dependsOnMethods = { "updatePlaceApi" },groups = { "parallel" },priority = 3)
 	public void getUpdatedAddress() throws IOException
@@ -61,9 +69,9 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	}
 	
 	
-	
 	/* 
 	 * Verify Delete place API with existing location
+	 * 
 	 */
 	
 	@Test(groups = { "parallel" },dependsOnMethods= {"getUpdatedAddress"},priority = 5)
@@ -75,9 +83,9 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	}
 	
 	
-	
 	/* 
 	 * Verify Delete API with non existing address
+	 * 
 	 */
 	
 	@Test(groups = {"parallel"},priority = 4)

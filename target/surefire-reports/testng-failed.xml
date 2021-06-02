@@ -5,15 +5,18 @@
     <listener class-name="resources.Listeners"/>
   </listeners>
   <test thread-count="5" verbose="0" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="123"/>
+        <include name="123"/>
+      </run>
+    </groups>
     <classes>
-      <class name="apiTest.ValidateAddUpdateGetDeleteAPI">
+      <class name="apiTest.GoogleLocationPayload">
         <methods>
-          <include name="addPlaceUsingJsonFile"/>
-          <include name="getUpdatedAddress"/>
-          <include name="deleteplace"/>
-          <include name="updatePlaceApi"/>
+          <include name="verifyGetplaceWithInvalidPlaceID"/>
         </methods>
-      </class> <!-- apiTest.ValidateAddUpdateGetDeleteAPI -->
+      </class> <!-- apiTest.GoogleLocationPayload -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

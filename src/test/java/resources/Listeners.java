@@ -11,7 +11,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-public class Listeners implements ITestListener {
+public class Listeners extends Utils implements ITestListener {
 	ExtentTest test;
 	ExtentReports extent=ExtentReportTest.getReportObject();
 	ThreadLocal<ExtentTest> extenttest=new ThreadLocal<ExtentTest>();
@@ -23,10 +23,12 @@ public class Listeners implements ITestListener {
 	}
 
 	public void onTestSuccess(ITestResult result) {
+		
 		extenttest.get().log(Status.PASS, result.getMethod().getMethodName()+" : executed succesfully");
 	}
 
 	public void onTestFailure(ITestResult result) {
+
 		extenttest.get().fail(result.getThrowable());
 	}
 
