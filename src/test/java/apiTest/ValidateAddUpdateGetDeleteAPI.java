@@ -33,7 +33,6 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	{	
 		log.info("addPlaceUsingJsonFile is initialzed");
 		apiActions=new APIactions();
-		apiActions=new APIactions();
 		response=apiActions.addAPI("jsonfile", "addplace");	
 	}
 	
