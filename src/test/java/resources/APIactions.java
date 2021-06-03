@@ -56,39 +56,39 @@ public class APIactions extends Utils {
 			}
 
 		response=res.when().post(apiResource("AddPlaceAPI"))
-				.then().spec(validateStauscode(200)).extract().response();
+				.then().spec(resSpecification()).extract().response();
 		requestResponselog(res,response,apiResource("AddPlaceAPI"));
 		return response;
 	}
 	
-	public Response getAPI(String placeid,int statuscode) throws IOException
+	public Response getAPI(String placeid) throws IOException
 	{
 		log.info("Initialize getAPI and constructing the url along with a query param, with the place id = "+placeid);
 		res=given()
 				.spec(requestSpecification())
 				.queryParam("place_id", placeid);
 		response=res.when().get(apiResource("getPlaceAPI"))
-				.then().spec(validateStauscode(statuscode)).extract().response();
+				.then().spec(resSpecification()).extract().response();
 		requestResponselog(res,response,apiResource("getPlaceAPI"));
 		return response;
 	}
 	
-	public Response updateAPI(String placeid, String address, int statuscode) throws IOException
+	public Response updateAPI(String placeid, String address) throws IOException
 	{
 		log.info("Initialize updateAPI and constructing the url, with the place id = "+placeid+" , address = "+address );
 		res=given().spec(requestSpecification()).body(Payloads.updatePayload(placeid, address));		
 		response=res.when().put(apiResource("updatePlaceAPI"))
-				.then().spec(validateStauscode(statuscode)).extract().response();
+				.then().spec(resSpecification()).extract().response();
 		requestResponselog(res,response,apiResource("updatePlaceAPI"));
 		return response;
 	}
 	
-	public Response deleteAPI(String placeid, int statuscode) throws IOException
+	public Response deleteAPI(String placeid) throws IOException
 	{
 		log.info("Initialize deleteAPI and constructing the url, with the place id = "+placeid);
 		res=given().spec(requestSpecification()).body(Payloads.deletePayload(placeid));
 		response=res.when().delete(apiResource("deletePlaceAPI"))
-				.then().spec(validateStauscode(statuscode)).extract().response();
+				.then().spec(resSpecification()).extract().response();
 		requestResponselog(res,response,apiResource("deletePlaceAPI"));
 		return response;
 	}

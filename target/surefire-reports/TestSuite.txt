@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.579 s <<< FAILURE! - in TestSuite
-verifyGetplaceWithInvalidPlaceID(apiTest.GoogleLocationPayload)  Time elapsed: 0.017 s  <<< FAILURE!
-java.lang.NullPointerException
-	at apiTest.GoogleLocationPayload.verifyGetplaceWithInvalidPlaceID(GoogleLocationPayload.java:56)
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.343 s <<< FAILURE! - in TestSuite
+deleteNonExistPlace(apiTest.ValidateAddUpdateGetDeleteAPI)  Time elapsed: 2.557 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<... data doesn't exists[123]> but was:<... data doesn't exists[]>
+	at apiTest.ValidateAddUpdateGetDeleteAPI.deleteNonExistPlace(ValidateAddUpdateGetDeleteAPI.java:90)
 

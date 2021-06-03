@@ -55,13 +55,13 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 02 17:46:29 IST 2021</td>
+<td>Started on:</td><td>Thu Jun 03 12:37:12 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (59 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15955 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>123 </td>
+<td>Included groups:</td><td>ssss </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -75,13 +75,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='apiTest.GoogleLocationPayload.verifyGetplaceWithInvalidPlaceID()'><b>verifyGetplaceWithInvalidPlaceID</b><br>Test class: apiTest.GoogleLocationPayload</td>
-<td><div><pre>java.lang.NullPointerException
-	at apiTest.GoogleLocationPayload.verifyGetplaceWithInvalidPlaceID(GoogleLocationPayload.java:56)
+<td title='apiTest.ValidateAddUpdateGetDeleteAPI.deleteNonExistPlace()'><b>deleteNonExistPlace</b><br>Test class: apiTest.ValidateAddUpdateGetDeleteAPI</td>
+<td><div><pre>org.junit.ComparisonFailure: expected:&lt;... data doesn&apos;t exists[123]&gt; but was:&lt;... data doesn&apos;t exists[]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at resources.Utils.responseValidation(Utils.java:173)
+	at apiTest.ValidateAddUpdateGetDeleteAPI.deleteNonExistPlace(ValidateAddUpdateGetDeleteAPI.java:90)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1457263953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1457263953'><pre>java.lang.NullPointerException
-	at apiTest.GoogleLocationPayload.verifyGetplaceWithInvalidPlaceID(GoogleLocationPayload.java:56)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace424106351", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace424106351'><pre>org.junit.ComparisonFailure: expected:&lt;... data doesn&apos;t exists[123]&gt; but was:&lt;... data doesn&apos;t exists[]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at resources.Utils.responseValidation(Utils.java:173)
+	at apiTest.ValidateAddUpdateGetDeleteAPI.deleteNonExistPlace(ValidateAddUpdateGetDeleteAPI.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,8 +121,36 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>0</td>
-<td>apiTest.GoogleLocationPayload@26abb146</td></tr>
+<td>2</td>
+<td>apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='apiTest.ValidateAddUpdateGetDeleteAPI.updatePlaceApi()'><b>updatePlaceApi</b><br>Test class: apiTest.ValidateAddUpdateGetDeleteAPI</td>
+<td></td>
+<td>3</td>
+<td>apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc</td></tr>
+<tr>
+<td title='apiTest.ValidateAddUpdateGetDeleteAPI.deleteplace()'><b>deleteplace</b><br>Test class: apiTest.ValidateAddUpdateGetDeleteAPI</td>
+<td></td>
+<td>4</td>
+<td>apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc</td></tr>
+<tr>
+<td title='apiTest.ValidateAddUpdateGetDeleteAPI.getUpdatedAddress()'><b>getUpdatedAddress</b><br>Test class: apiTest.ValidateAddUpdateGetDeleteAPI</td>
+<td></td>
+<td>2</td>
+<td>apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc</td></tr>
+<tr>
+<td title='apiTest.ValidateAddUpdateGetDeleteAPI.addPlaceUsingJsonFile()'><b>addPlaceUsingJsonFile</b><br>Test class: apiTest.ValidateAddUpdateGetDeleteAPI</td>
+<td></td>
+<td>3</td>
+<td>apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc</td></tr>
 </table><p>
 </body>
 </html>

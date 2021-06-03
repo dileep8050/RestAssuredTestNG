@@ -1,20 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="17" total="18" passed="0">
+<testng-results skipped="0" failed="1" ignored="14" total="19" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="59" started-at="2021-06-02T17:46:29 IST" finished-at="2021-06-02T17:46:30 IST">
+  <suite name="Suite" duration-ms="15955" started-at="2021-06-03T12:37:12 IST" finished-at="2021-06-03T12:37:28 IST">
     <groups>
-      <group name="123">
-        <method signature="GoogleLocationPayload.verifyGetplaceWithInvalidPlaceID()[pri:4, instance:apiTest.GoogleLocationPayload@26abb146]" name="verifyGetplaceWithInvalidPlaceID" class="apiTest.GoogleLocationPayload"/>
-      </group> <!-- 123 -->
+      <group name="ssss">
+        <method signature="ValidateAddUpdateGetDeleteAPI.addPlaceUsingJsonFile()[pri:1, instance:apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc]" name="addPlaceUsingJsonFile" class="apiTest.ValidateAddUpdateGetDeleteAPI"/>
+        <method signature="ValidateAddUpdateGetDeleteAPI.deleteNonExistPlace()[pri:4, instance:apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc]" name="deleteNonExistPlace" class="apiTest.ValidateAddUpdateGetDeleteAPI"/>
+        <method signature="ValidateAddUpdateGetDeleteAPI.updatePlaceApi()[pri:2, instance:apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc]" name="updatePlaceApi" class="apiTest.ValidateAddUpdateGetDeleteAPI"/>
+        <method signature="ValidateAddUpdateGetDeleteAPI.getUpdatedAddress()[pri:3, instance:apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc]" name="getUpdatedAddress" class="apiTest.ValidateAddUpdateGetDeleteAPI"/>
+        <method signature="ValidateAddUpdateGetDeleteAPI.deleteplace()[pri:5, instance:apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc]" name="deleteplace" class="apiTest.ValidateAddUpdateGetDeleteAPI"/>
+      </group> <!-- ssss -->
     </groups>
-    <test name="Test" duration-ms="59" started-at="2021-06-02T17:46:29 IST" finished-at="2021-06-02T17:46:30 IST">
-      <class name="apiTest.GoogleLocationPayload">
-        <test-method status="FAIL" signature="verifyGetplaceWithInvalidPlaceID()[pri:4, instance:apiTest.GoogleLocationPayload@26abb146]" name="verifyGetplaceWithInvalidPlaceID" duration-ms="11" started-at="2021-06-02T17:46:30 IST" finished-at="2021-06-02T17:46:30 IST">
-          <exception class="java.lang.NullPointerException">
+    <test name="Test" duration-ms="15955" started-at="2021-06-03T12:37:12 IST" finished-at="2021-06-03T12:37:28 IST">
+      <class name="apiTest.ValidateAddUpdateGetDeleteAPI">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc]" name="beforeTest" is-config="true" duration-ms="10" started-at="2021-06-03T12:37:12 IST" finished-at="2021-06-03T12:37:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="addPlaceUsingJsonFile()[pri:1, instance:apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc]" name="addPlaceUsingJsonFile" duration-ms="3388" started-at="2021-06-03T12:37:12 IST" finished-at="2021-06-03T12:37:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPlaceUsingJsonFile -->
+        <test-method status="PASS" signature="updatePlaceApi()[pri:2, instance:apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc]" name="updatePlaceApi" duration-ms="3581" started-at="2021-06-03T12:37:15 IST" depends-on-methods="apiTest.ValidateAddUpdateGetDeleteAPI.addPlaceUsingJsonFile" finished-at="2021-06-03T12:37:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePlaceApi -->
+        <test-method status="PASS" signature="getUpdatedAddress()[pri:3, instance:apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc]" name="getUpdatedAddress" duration-ms="2151" started-at="2021-06-03T12:37:19 IST" depends-on-methods="apiTest.ValidateAddUpdateGetDeleteAPI.updatePlaceApi" finished-at="2021-06-03T12:37:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUpdatedAddress -->
+        <test-method status="FAIL" signature="deleteNonExistPlace()[pri:4, instance:apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc]" name="deleteNonExistPlace" duration-ms="2547" started-at="2021-06-03T12:37:21 IST" finished-at="2021-06-03T12:37:24 IST">
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<... data doesn't exists[123]> but was:<... data doesn't exists[]>]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at apiTest.GoogleLocationPayload.verifyGetplaceWithInvalidPlaceID(GoogleLocationPayload.java:56)
+              <![CDATA[org.junit.ComparisonFailure: expected:<... data doesn't exists[123]> but was:<... data doesn't exists[]>
+at org.junit.Assert.assertEquals(Assert.java:117)
+at org.junit.Assert.assertEquals(Assert.java:146)
+at resources.Utils.responseValidation(Utils.java:173)
+at apiTest.ValidateAddUpdateGetDeleteAPI.deleteNonExistPlace(ValidateAddUpdateGetDeleteAPI.java:90)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,11 +75,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.junit.ComparisonFailure -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyGetplaceWithInvalidPlaceID -->
-      </class> <!-- apiTest.GoogleLocationPayload -->
+        </test-method> <!-- deleteNonExistPlace -->
+        <test-method status="PASS" signature="deleteplace()[pri:5, instance:apiTest.ValidateAddUpdateGetDeleteAPI@7b4c50bc]" name="deleteplace" duration-ms="4226" started-at="2021-06-03T12:37:24 IST" depends-on-methods="apiTest.ValidateAddUpdateGetDeleteAPI.getUpdatedAddress" finished-at="2021-06-03T12:37:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteplace -->
+      </class> <!-- apiTest.ValidateAddUpdateGetDeleteAPI -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

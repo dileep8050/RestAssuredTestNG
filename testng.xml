@@ -11,6 +11,7 @@
       <class name="apiTest.ValidateAddApiUsingExcel"/>
       <class name="apiTest.ValidateAddApiUsingTextFile"/>
       <class name="apiTest.ValidatecomplexJson"/>
+      <class name="apiTest.SampleTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -38,7 +38,7 @@ public class GoogleLocationPayload extends Utils {
 		response=apiActions.addAPI("nonfile", null);
 		String placeid=getJsonPath(response,"place_id");
 
-		response=apiActions.getAPI(placeid, 200);
+		response=apiActions.getAPI(placeid);
 		
 		Assert.assertEquals("http://google.com", getJsonPath(response,"website"));
 		System.out.println(getJsonPath(response,"website"));
@@ -47,7 +47,7 @@ public class GoogleLocationPayload extends Utils {
 	@Test(priority=4)
 	public void verifyGetplaceWithInvalidPlaceID() throws IOException
 	{
-		response=apiActions.getAPI("999fd424c9aa9bad52ae19b84408c01", 404);
+		response=apiActions.getAPI("999fd424c9aa9bad52ae19b84408c01");
 	
 		Assert.assertEquals("Get operation failed, looks like place_id  doesn't exists", getJsonPath(response,"msg"));
 		System.out.println(getJsonPath(response,"msg"));

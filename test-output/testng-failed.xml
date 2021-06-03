@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apiTest.ValidateAddUpdateGetDeleteAPI">
+      <class name="apiTest.SampleTest">
         <methods>
-          <include name="updatePlaceApi"/>
-          <include name="addPlaceUsingJsonFile"/>
-          <include name="deleteplace"/>
-          <include name="getUpdatedAddress"/>
-          <include name="inta"/>
+          <include name="trytest"/>
         </methods>
-      </class> <!-- apiTest.ValidateAddUpdateGetDeleteAPI -->
+      </class> <!-- apiTest.SampleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

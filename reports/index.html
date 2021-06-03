@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 2, 2021 05:46:29 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jun 3, 2021 12:37:11 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,6 +71,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
@@ -79,25 +80,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyGetplaceWithInvalidPlaceID</p>
+            <p class="name">addPlaceUsingJsonFile</p>
             <p class="text-sm">
-              <span>5:46:30 PM</span> / <span>00:00:00:010</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>12:37:12 PM</span> / <span>00:00:03:379</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyGetplaceWithInvalidPlaceID</h5>
-<span class='badge badge-success'>06.02.2021 5:46:30 PM</span>
-<span class='badge badge-danger'>06.02.2021 5:46:30 PM</span>
-<span class='badge badge-default'>00:00:00:010</span>
+<h5 class="test-status text-pass">addPlaceUsingJsonFile</h5>
+<span class='badge badge-success'>06.03.2021 12:37:12 PM</span>
+<span class='badge badge-danger'>06.03.2021 12:37:15 PM</span>
+<span class='badge badge-default'>00:00:03:379</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -108,11 +109,134 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:46:30 PM</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:37:15 PM</td>
         <td>
-          <textarea readonly class="code-block">java.lang.NullPointerException
-	at apiTest.GoogleLocationPayload.verifyGetplaceWithInvalidPlaceID(GoogleLocationPayload.java:56)
+          addPlaceUsingJsonFile : executed succesfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">updatePlaceApi</p>
+            <p class="text-sm">
+              <span>12:37:15 PM</span> / <span>00:00:03:582</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">updatePlaceApi</h5>
+<span class='badge badge-success'>06.03.2021 12:37:15 PM</span>
+<span class='badge badge-danger'>06.03.2021 12:37:19 PM</span>
+<span class='badge badge-default'>00:00:03:582</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:37:19 PM</td>
+        <td>
+          updatePlaceApi : executed succesfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getUpdatedAddress</p>
+            <p class="text-sm">
+              <span>12:37:19 PM</span> / <span>00:00:02:150</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getUpdatedAddress</h5>
+<span class='badge badge-success'>06.03.2021 12:37:19 PM</span>
+<span class='badge badge-danger'>06.03.2021 12:37:21 PM</span>
+<span class='badge badge-default'>00:00:02:150</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:37:21 PM</td>
+        <td>
+          getUpdatedAddress : executed succesfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">deleteNonExistPlace</p>
+            <p class="text-sm">
+              <span>12:37:21 PM</span> / <span>00:00:02:558</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">deleteNonExistPlace</h5>
+<span class='badge badge-success'>06.03.2021 12:37:21 PM</span>
+<span class='badge badge-danger'>06.03.2021 12:37:24 PM</span>
+<span class='badge badge-default'>00:00:02:558</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:37:24 PM</td>
+        <td>
+          <textarea readonly class="code-block">org.junit.ComparisonFailure: expected:<... data doesn't exists[123]> but was:<... data doesn't exists[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at resources.Utils.responseValidation(Utils.java:173)
+	at apiTest.ValidateAddUpdateGetDeleteAPI.deleteNonExistPlace(ValidateAddUpdateGetDeleteAPI.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -154,6 +278,46 @@
 </div>
           </div>
         </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">deleteplace</p>
+            <p class="text-sm">
+              <span>12:37:24 PM</span> / <span>00:00:04:226</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">deleteplace</h5>
+<span class='badge badge-success'>06.03.2021 12:37:24 PM</span>
+<span class='badge badge-danger'>06.03.2021 12:37:28 PM</span>
+<span class='badge badge-default'>00:00:04:226</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:37:28 PM</td>
+        <td>
+          deleteplace : executed succesfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -176,12 +340,12 @@
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.NullPointerException</p>
+<p class="name">org.junit.ComparisonFailure</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.NullPointerException</h4>
+<h4>org.junit.ComparisonFailure</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -195,9 +359,9 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:46:30 PM</td>
+<td>12:37:21 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>verifyGetplaceWithInvalidPlaceID</a>
+<a href="#" class="linked" test-id='4' id='4'>deleteNonExistPlace</a>
 </td>
 </tr>
 </tbody>
@@ -217,19 +381,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 2, 2021 05:46:29 PM</h3>
+<h3>Jun 3, 2021 12:37:11 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 2, 2021 05:46:30 PM</h3>
+<h3>Jun 3, 2021 12:37:28 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>4</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -251,12 +415,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='80%'>
+<b>4</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> tests failed,
+<small data-tooltip='20%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -274,9 +438,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='80%'><b>4</b> events passed</small></div>
 <div>
-<small data-tooltip='100%'><b>1</b> events failed,
+<small data-tooltip='20%'><b>1</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -293,7 +457,7 @@
 </div></div>
 <script>
 var timeline = {
-"verifyGetplaceWithInvalidPlaceID":0.01
+"addPlaceUsingJsonFile":3.379,"updatePlaceApi":3.582,"getUpdatedAddress":2.15,"deleteNonExistPlace":2.558,"deleteplace":4.226
 };
 </script>
 <div class="row">
@@ -324,7 +488,7 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
+passParent: 4,
 failParent: 1,
 warningParent: 0,
 skipParent: 0,
@@ -341,7 +505,7 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
+passEvents: 4,
 failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,

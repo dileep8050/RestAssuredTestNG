@@ -1,12 +1,7 @@
 package apiTest;
 
 import java.io.IOException;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import io.restassured.response.Response;
@@ -19,21 +14,22 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	Response response;
 	String address;
 	String placeid;
-	private static Logger log = LogManager.getLogger(ValidateAddUpdateGetDeleteAPI.class.getName());
 	
-	
+	@BeforeTest(alwaysRun=true)
+    public void beforeTest() {
+		apiActions=new APIactions();
+    }
 	/* 
 	 * Verify Add place API using Json file for request body 
 	 * 
 	 */
 
 
-	@Test(priority = 1,groups = { "parallel" })
+	@Test(priority = 1,groups = { "ssss" })
 	public void addPlaceUsingJsonFile() throws Exception
 	{	
-		log.info("addPlaceUsingJsonFile is initialzed");
-		apiActions=new APIactions();
 		response=apiActions.addAPI("jsonfile", "addplace");	
+		Assert.assertEquals(response.getStatusCode(), 200);
 	}
 	
 	
@@ -42,14 +38,14 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	 *  
 	 */
 	
-	@Test(dependsOnMethods = { "addPlaceUsingJsonFile" },groups = { "parallel" },priority = 2)
+	@Test(dependsOnMethods = { "addPlaceUsingJsonFile" },groups = { "ssss" },priority = 2)
 	public void updatePlaceApi() throws IOException
 	{
-		log.info("updatePlaceApi is initialzed");
 		placeid=getJsonPath(response,"place_id");
 		address="Updating my address";
-		response=apiActions.updateAPI(placeid, address, 200);
-		Assert.assertEquals("Address successfully updated", getJsonPath(response,"msg"));
+		response=apiActions.updateAPI(placeid, address);
+		validateStatusCode(response,200);
+		responseValidation(response,"msg","Address successfully updated");	
 	}
 	
 	
@@ -58,13 +54,12 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	 * Verify Get API and also validate the updated address 
 	 * 
 	 */
-	@Test(dependsOnMethods = { "updatePlaceApi" },groups = { "parallel" },priority = 3)
+	@Test(dependsOnMethods = { "updatePlaceApi" },groups = { "ssss" },priority = 3)
 	public void getUpdatedAddress() throws IOException
 	{
-		log.info("getUpdatedAddress is initialzed");
-		response=apiActions.getAPI(placeid, 200);
-		Assert.assertEquals(address, getJsonPath(response,"address"));
-		Assert.assertTrue(false);
+		response=apiActions.getAPI(placeid);
+		validateStatusCode(response,200);
+		responseValidation(response,"address",address);	
 	}
 	
 	
@@ -73,12 +68,12 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	 * 
 	 */
 	
-	@Test(groups = { "parallel" },dependsOnMethods= {"getUpdatedAddress"},priority = 5)
+	@Test(groups = { "ssss" },dependsOnMethods= {"getUpdatedAddress"},priority = 5)
 	public void deleteplace() throws IOException
 	{
-		log.info("deleteplace is initialzed");
-		response=apiActions.deleteAPI(placeid, 200);
-		Assert.assertEquals("OK", getJsonPath(response,"status"));	
+		response=apiActions.deleteAPI(placeid);
+		validateStatusCode(response,200);
+		responseValidation(response,"status","OK");	
 	}
 	
 	
@@ -87,12 +82,12 @@ public class ValidateAddUpdateGetDeleteAPI extends Utils {
 	 * 
 	 */
 	
-	@Test(groups = {"parallel"},priority = 4)
+	@Test(groups = {"ssss"},priority = 4)
 	public void deleteNonExistPlace() throws IOException
 	{
-		log.info("deleteNonExistPlace is initialzed");
-		Response response=apiActions.deleteAPI("abcd", 404);
-		Assert.assertEquals("Delete operation failed, looks like the data doesn't exists", getJsonPath(response,"msg"));	
+		Response response=apiActions.deleteAPI("abcd");
+		validateStatusCode(response,404);
+		responseValidation(response,"msg","Delete operation failed, looks like the data doesn't exists123");	
 	}
 	
 }

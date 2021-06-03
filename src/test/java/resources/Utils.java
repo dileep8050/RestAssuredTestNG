@@ -63,23 +63,10 @@ public class Utils {
 	}
 	
 	/* To validate the response code based on user input */
-	public ResponseSpecification validateStauscode(int statuscode)
+	public ResponseSpecification resSpecification()
 	{
-		if(statuscode==200)
-		{
-			resspec=new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
-			log.debug("Validation happen successfully with the status code 200 ");
-		}
-		else if(statuscode==404)
-		{
-			resspec=new ResponseSpecBuilder().expectStatusCode(404).expectContentType(ContentType.JSON).build();
-			log.debug("Validation happen successfully with the status code 404 ");
-		}
-		else
-		{
-			Assert.assertEquals("Status is not handled in the staus code validation ", statuscode, 0);
-			log.error("Not handling error codes, please implement the validations");
-		}
+			resspec=new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
+			
 		return resspec;
 	}
 	
@@ -121,9 +108,11 @@ public class Utils {
 		QueryableRequestSpecification queryable = SpecificationQuerier.query(res);
 		String reqResDetails="\n"+
 				"\n"+
-		"################ Request,Status code,Response Details ##################"+"\n"+
+		"====================== Request,Status code,Response Details ========================="+"\n"+
 		"\n"+
-		"**************************** Header Details ***************************"+"\n"+
+		"------------------------"+"\n"+
+		"**** Header Details ****"+"\n"+
+		"------------------------"+"\n"+
 		"Request method: " + queryable.getMethod()+"\n"+
 		"Request URI: " + queryable.getBaseUri()+resources+"\n"+
 		"Proxy: " + queryable.getProxySpecification()+"\n"+
@@ -133,19 +122,56 @@ public class Utils {
 		"Cookies: " + queryable.getCookies()+"\n"+
 		"Multiparts: " + queryable.getMultiPartParams()+"\n"+
 		"\n"+
-		"**************************** Body Details ****************************"+"\n"+
+		"----------------------"+"\n"+
+		"**** Body Details ****"+"\n"+
+		"----------------------"+"\n"+
 		"body is: " + queryable.getBody()+"\n"+
 		"\n"+
-		"**************************** Status code ****************************"+"\n"+
+		"---------------------"+"\n"+
+		"**** Status code ****"+"\n"+
+		"---------------------"+"\n"+
 		"Response Status code: " + response.getStatusCode()+"\n"+
 		"\n"+
-		"**************************** Response Details ****************************"+"\n"+
+		"--------------------------"+"\n"+
+		"**** Response Details ****"+"\n"+
+		"--------------------------"+"\n"+
 		response.asString()+"\n"+
-		"\n"+
-		"##################################### END ##################################"+"\n";
+		"\n"+"\n";
 		
 		log.info(reqResDetails);
 		
+	}
+	
+	public void validateStatusCode(Response response, int expectedStatusCode)
+	{
+		int actualStatuscode=response.getStatusCode();
+		
+		if(actualStatuscode==expectedStatusCode)
+		{
+			log.info("Expected is ("+expectedStatusCode+") and Actual status code ("+actualStatuscode+") is matched and validated successfully");
+			Assert.assertEquals(expectedStatusCode, actualStatuscode);
+		}
+		else
+		{
+			log.error("Expected is ("+expectedStatusCode+") and Actual status code ("+actualStatuscode+") is not matched and validation failed");
+			Assert.assertEquals(expectedStatusCode, actualStatuscode);
+		}
+	}
+	public void responseValidation(Response response, String expectedKey,String expectedValue)
+	{
+		String resp= response.asString();
+		JsonPath js=new JsonPath(resp);
+		String actualvalue=js.get(expectedKey).toString();
+		if(expectedValue.equals(actualvalue))
+		{
+			log.info("Expected value is ("+expectedValue+") and Actual status key value ("+actualvalue+") is matched and validated successfully");
+			Assert.assertEquals(expectedValue, actualvalue);
+		}
+		else
+		{
+			log.error("Expected value is ("+expectedValue+") and Actual status code ("+actualvalue+") is not matched and validation failed");
+			Assert.assertEquals(expectedValue, actualvalue);
+		}
 	}
 		
 }

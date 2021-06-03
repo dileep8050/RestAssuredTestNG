@@ -1,17 +1,22 @@
-2021-06-02 17:21:36.731 [INFO ] [main] [3a3a1295-a7fb-454b-9c14-05ff934b8dde] [addPlaceUsingJsonFile] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - addPlaceUsingJsonFile is initialzed
-2021-06-02 17:21:36.751 [INFO ] [main] [e3ce4378-553f-4c11-a9e6-d78f6b947050] [deleteNonExistPlace] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - deleteNonExistPlace is initialzed
-2021-06-02 17:23:09.356 [INFO ] [main] [4ea4ce89-2a2d-448e-9fa1-fdcc9c226511] [addPlaceUsingJsonFile] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - addPlaceUsingJsonFile is initialzed
-2021-06-02 17:23:09.362 [INFO ] [main] [4ea4ce89-2a2d-448e-9fa1-fdcc9c226511] [addPlaceUsingJsonFile] APIactions  resources.APIactions - Initialize addAPI and constructing the url, body is taking from the  source type : jsonfile
-2021-06-02 17:23:09.971 [DEBUG] [main] [4ea4ce89-2a2d-448e-9fa1-fdcc9c226511] [addPlaceUsingJsonFile] Utils  resources.Utils - Log file created with the name logging2021_06_02_17_23_09.txt
-2021-06-02 17:23:09.978 [INFO ] [main] [4ea4ce89-2a2d-448e-9fa1-fdcc9c226511] [addPlaceUsingJsonFile] Utils  resources.Utils - Fetching the url from the properties file, Url : https://rahulshettyacademy.com
-2021-06-02 17:23:10.158 [INFO ] [main] [4ea4ce89-2a2d-448e-9fa1-fdcc9c226511] [addPlaceUsingJsonFile] Utils  resources.Utils - Url constructed with the resource :AddPlaceAPI == /maps/api/place/add/json
-2021-06-02 17:23:14.281 [DEBUG] [main] [4ea4ce89-2a2d-448e-9fa1-fdcc9c226511] [addPlaceUsingJsonFile] Utils  resources.Utils - Validation happen successfully with the status code 200 
-2021-06-02 17:23:14.302 [INFO ] [main] [4ea4ce89-2a2d-448e-9fa1-fdcc9c226511] [addPlaceUsingJsonFile] Utils  resources.Utils - Url constructed with the resource :AddPlaceAPI == /maps/api/place/add/json
-2021-06-02 17:23:14.304 [INFO ] [main] [4ea4ce89-2a2d-448e-9fa1-fdcc9c226511] [addPlaceUsingJsonFile] Utils  resources.Utils - 
 
-################ Request,Status code,Response Details ##################
+2021-06-03 12:37:12.378 [INFO ] [main] [] [] Utils  resources.Utils - 
 
-**************************** Header Details ***************************
+
+##########################################################################################################
+***************   addPlaceUsingJsonFile   Test cases execution started ****************
+##########################################################################################################
+2021-06-03 12:37:12.387 [INFO ] [main] [39920b4b-9c27-40a1-abff-1b3844d3f81a] [addPlaceUsingJsonFile] APIactions  resources.APIactions - Initialize addAPI and constructing the url, body is taking from the  source type : jsonfile
+2021-06-03 12:37:12.888 [DEBUG] [main] [39920b4b-9c27-40a1-abff-1b3844d3f81a] [addPlaceUsingJsonFile] Utils  resources.Utils - Log file created with the name logging2021_06_03_12_37_12.txt
+2021-06-03 12:37:12.893 [INFO ] [main] [39920b4b-9c27-40a1-abff-1b3844d3f81a] [addPlaceUsingJsonFile] Utils  resources.Utils - Fetching the url from the properties file, Url : https://rahulshettyacademy.com
+2021-06-03 12:37:13.045 [INFO ] [main] [39920b4b-9c27-40a1-abff-1b3844d3f81a] [addPlaceUsingJsonFile] Utils  resources.Utils - Url constructed with the resource :AddPlaceAPI == /maps/api/place/add/json
+2021-06-03 12:37:15.759 [INFO ] [main] [39920b4b-9c27-40a1-abff-1b3844d3f81a] [addPlaceUsingJsonFile] Utils  resources.Utils - Url constructed with the resource :AddPlaceAPI == /maps/api/place/add/json
+2021-06-03 12:37:15.759 [INFO ] [main] [39920b4b-9c27-40a1-abff-1b3844d3f81a] [addPlaceUsingJsonFile] Utils  resources.Utils - 
+
+====================== Request,Status code,Response Details =========================
+
+------------------------
+**** Header Details ****
+------------------------
 Request method: POST
 Request URI: https://rahulshettyacademy.com/maps/api/place/add/json
 Proxy: null
@@ -22,7 +27,9 @@ Content-Type=application/json; charset=UTF-8
 Cookies: 
 Multiparts: []
 
-**************************** Body Details ****************************
+----------------------
+**** Body Details ****
+----------------------
 body is: {
   "location": {
     "lat": -38.383494,
@@ -40,26 +47,48 @@ body is: {
   "language": "French-IN"
 }
 
-**************************** Status code ****************************
+---------------------
+**** Status code ****
+---------------------
 Response Status code: 200
 
-**************************** Response Details ****************************
-{"status":"OK","place_id":"1ef54539f71759380a8b47ad7f79444e","scope":"APP","reference":"c6134e89d37eed990102a0c4b747358fc6134e89d37eed990102a0c4b747358f","id":"c6134e89d37eed990102a0c4b747358f"}
+--------------------------
+**** Response Details ****
+--------------------------
+{"status":"OK","place_id":"3332183070043542a2004b820162fc69","scope":"APP","reference":"973485c70506da4751b6a97e7e731876973485c70506da4751b6a97e7e731876","id":"973485c70506da4751b6a97e7e731876"}
 
-##################################### END ##################################
 
-2021-06-02 17:23:14.318 [INFO ] [main] [7b24cbfd-1563-42db-a75f-f5816c93b082] [updatePlaceApi] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - updatePlaceApi is initialzed
-2021-06-02 17:23:14.322 [INFO ] [main] [7b24cbfd-1563-42db-a75f-f5816c93b082] [updatePlaceApi] Utils  resources.Utils - Response is : {"status":"OK","place_id":"1ef54539f71759380a8b47ad7f79444e","scope":"APP","reference":"c6134e89d37eed990102a0c4b747358fc6134e89d37eed990102a0c4b747358f","id":"c6134e89d37eed990102a0c4b747358f"}
-2021-06-02 17:23:15.588 [INFO ] [main] [7b24cbfd-1563-42db-a75f-f5816c93b082] [updatePlaceApi] Utils  resources.Utils - Request key is : place_id and the value is : 1ef54539f71759380a8b47ad7f79444e
-2021-06-02 17:23:15.607 [INFO ] [main] [7b24cbfd-1563-42db-a75f-f5816c93b082] [updatePlaceApi] APIactions  resources.APIactions - Initialize updateAPI and constructing the url, with the place id = 1ef54539f71759380a8b47ad7f79444e , address = Updating my address
-2021-06-02 17:23:15.620 [INFO ] [main] [7b24cbfd-1563-42db-a75f-f5816c93b082] [updatePlaceApi] Utils  resources.Utils - Url constructed with the resource :updatePlaceAPI == /maps/api/place/update/json
-2021-06-02 17:23:18.711 [DEBUG] [main] [7b24cbfd-1563-42db-a75f-f5816c93b082] [updatePlaceApi] Utils  resources.Utils - Validation happen successfully with the status code 200 
-2021-06-02 17:23:18.712 [INFO ] [main] [7b24cbfd-1563-42db-a75f-f5816c93b082] [updatePlaceApi] Utils  resources.Utils - Url constructed with the resource :updatePlaceAPI == /maps/api/place/update/json
-2021-06-02 17:23:18.712 [INFO ] [main] [7b24cbfd-1563-42db-a75f-f5816c93b082] [updatePlaceApi] Utils  resources.Utils - 
 
-################ Request,Status code,Response Details ##################
+2021-06-03 12:37:15.766 [INFO ] [main] [39920b4b-9c27-40a1-abff-1b3844d3f81a] [addPlaceUsingJsonFile] Utils  resources.Utils - 
 
-**************************** Header Details ***************************
+
+##########################################################################################################
+***************   addPlaceUsingJsonFile is Pass ****************
+##########################################################################################################
+
+
+
+
+
+
+2021-06-03 12:37:15.768 [INFO ] [main] [39920b4b-9c27-40a1-abff-1b3844d3f81a] [addPlaceUsingJsonFile] Utils  resources.Utils - 
+
+
+##########################################################################################################
+***************   updatePlaceApi   Test cases execution started ****************
+##########################################################################################################
+2021-06-03 12:37:15.770 [INFO ] [main] [3380ef63-8472-433d-ab83-f158eed3c129] [updatePlaceApi] Utils  resources.Utils - Response is : {"status":"OK","place_id":"3332183070043542a2004b820162fc69","scope":"APP","reference":"973485c70506da4751b6a97e7e731876973485c70506da4751b6a97e7e731876","id":"973485c70506da4751b6a97e7e731876"}
+2021-06-03 12:37:16.499 [INFO ] [main] [3380ef63-8472-433d-ab83-f158eed3c129] [updatePlaceApi] Utils  resources.Utils - Request key is : place_id and the value is : 3332183070043542a2004b820162fc69
+2021-06-03 12:37:16.512 [INFO ] [main] [3380ef63-8472-433d-ab83-f158eed3c129] [updatePlaceApi] APIactions  resources.APIactions - Initialize updateAPI and constructing the url, with the place id = 3332183070043542a2004b820162fc69 , address = Updating my address
+2021-06-03 12:37:16.517 [INFO ] [main] [3380ef63-8472-433d-ab83-f158eed3c129] [updatePlaceApi] Utils  resources.Utils - Url constructed with the resource :updatePlaceAPI == /maps/api/place/update/json
+2021-06-03 12:37:19.338 [INFO ] [main] [3380ef63-8472-433d-ab83-f158eed3c129] [updatePlaceApi] Utils  resources.Utils - Url constructed with the resource :updatePlaceAPI == /maps/api/place/update/json
+2021-06-03 12:37:19.338 [INFO ] [main] [3380ef63-8472-433d-ab83-f158eed3c129] [updatePlaceApi] Utils  resources.Utils - 
+
+====================== Request,Status code,Response Details =========================
+
+------------------------
+**** Header Details ****
+------------------------
 Request method: PUT
 Request URI: https://rahulshettyacademy.com/maps/api/place/update/json
 Proxy: null
@@ -70,66 +99,114 @@ Content-Type=application/json; charset=UTF-8
 Cookies: 
 Multiparts: []
 
-**************************** Body Details ****************************
+----------------------
+**** Body Details ****
+----------------------
 body is: {
-"place_id":"1ef54539f71759380a8b47ad7f79444e",
+"place_id":"3332183070043542a2004b820162fc69",
 "address":"Updating my address",
 "key":"qaclick123"
 }
 
-**************************** Status code ****************************
+---------------------
+**** Status code ****
+---------------------
 Response Status code: 200
 
-**************************** Response Details ****************************
+--------------------------
+**** Response Details ****
+--------------------------
 {"msg":"Address successfully updated"}
 
-##################################### END ##################################
 
-2021-06-02 17:23:18.713 [INFO ] [main] [7b24cbfd-1563-42db-a75f-f5816c93b082] [updatePlaceApi] Utils  resources.Utils - Response is : {"msg":"Address successfully updated"}
-2021-06-02 17:23:18.725 [INFO ] [main] [7b24cbfd-1563-42db-a75f-f5816c93b082] [updatePlaceApi] Utils  resources.Utils - Request key is : msg and the value is : Address successfully updated
-2021-06-02 17:23:18.743 [INFO ] [main] [beb64e38-4cc3-4fbf-a110-28c521bd9571] [getUpdatedAddress] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - getUpdatedAddress is initialzed
-2021-06-02 17:23:18.743 [INFO ] [main] [beb64e38-4cc3-4fbf-a110-28c521bd9571] [getUpdatedAddress] APIactions  resources.APIactions - Initialize getAPI and constructing the url along with a query param, with the place id = 1ef54539f71759380a8b47ad7f79444e
-2021-06-02 17:23:18.747 [INFO ] [main] [beb64e38-4cc3-4fbf-a110-28c521bd9571] [getUpdatedAddress] Utils  resources.Utils - Url constructed with the resource :getPlaceAPI == /maps/api/place/get/json
-2021-06-02 17:23:20.922 [DEBUG] [main] [beb64e38-4cc3-4fbf-a110-28c521bd9571] [getUpdatedAddress] Utils  resources.Utils - Validation happen successfully with the status code 200 
-2021-06-02 17:23:20.925 [INFO ] [main] [beb64e38-4cc3-4fbf-a110-28c521bd9571] [getUpdatedAddress] Utils  resources.Utils - Url constructed with the resource :getPlaceAPI == /maps/api/place/get/json
-2021-06-02 17:23:20.926 [INFO ] [main] [beb64e38-4cc3-4fbf-a110-28c521bd9571] [getUpdatedAddress] Utils  resources.Utils - 
 
-################ Request,Status code,Response Details ##################
+2021-06-03 12:37:19.338 [INFO ] [main] [3380ef63-8472-433d-ab83-f158eed3c129] [updatePlaceApi] Utils  resources.Utils - Expected is (200) and Actual status code (200) is matched and validated successfully
+2021-06-03 12:37:19.349 [INFO ] [main] [3380ef63-8472-433d-ab83-f158eed3c129] [updatePlaceApi] Utils  resources.Utils - Expected value is (Address successfully updated) and Actual status key value (Address successfully updated) is matched and validated successfully
+2021-06-03 12:37:19.350 [INFO ] [main] [3380ef63-8472-433d-ab83-f158eed3c129] [updatePlaceApi] Utils  resources.Utils - 
 
-**************************** Header Details ***************************
+
+##########################################################################################################
+***************   updatePlaceApi is Pass ****************
+##########################################################################################################
+
+
+
+
+
+
+2021-06-03 12:37:19.350 [INFO ] [main] [3380ef63-8472-433d-ab83-f158eed3c129] [updatePlaceApi] Utils  resources.Utils - 
+
+
+##########################################################################################################
+***************   getUpdatedAddress   Test cases execution started ****************
+##########################################################################################################
+2021-06-03 12:37:19.351 [INFO ] [main] [07b40715-fea7-4ffb-8043-bfe817967521] [getUpdatedAddress] APIactions  resources.APIactions - Initialize getAPI and constructing the url along with a query param, with the place id = 3332183070043542a2004b820162fc69
+2021-06-03 12:37:19.353 [INFO ] [main] [07b40715-fea7-4ffb-8043-bfe817967521] [getUpdatedAddress] Utils  resources.Utils - Url constructed with the resource :getPlaceAPI == /maps/api/place/get/json
+2021-06-03 12:37:21.465 [INFO ] [main] [07b40715-fea7-4ffb-8043-bfe817967521] [getUpdatedAddress] Utils  resources.Utils - Url constructed with the resource :getPlaceAPI == /maps/api/place/get/json
+2021-06-03 12:37:21.466 [INFO ] [main] [07b40715-fea7-4ffb-8043-bfe817967521] [getUpdatedAddress] Utils  resources.Utils - 
+
+====================== Request,Status code,Response Details =========================
+
+------------------------
+**** Header Details ****
+------------------------
 Request method: GET
 Request URI: https://rahulshettyacademy.com/maps/api/place/get/json
 Proxy: null
-Request params: {key=qaclick123, place_id=1ef54539f71759380a8b47ad7f79444e}
+Request params: {key=qaclick123, place_id=3332183070043542a2004b820162fc69}
 Form params: {}
 Headers: Accept=*/*
 Content-Type=application/json; charset=UTF-8
 Cookies: 
 Multiparts: []
 
-**************************** Body Details ****************************
+----------------------
+**** Body Details ****
+----------------------
 body is: null
 
-**************************** Status code ****************************
+---------------------
+**** Status code ****
+---------------------
 Response Status code: 200
 
-**************************** Response Details ****************************
+--------------------------
+**** Response Details ****
+--------------------------
 {"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Using Json file","phone_number":"(+91) 983 893 3937","address":"Updating my address","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
 
-##################################### END ##################################
 
-2021-06-02 17:23:20.928 [INFO ] [main] [beb64e38-4cc3-4fbf-a110-28c521bd9571] [getUpdatedAddress] Utils  resources.Utils - Response is : {"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Using Json file","phone_number":"(+91) 983 893 3937","address":"Updating my address","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
-2021-06-02 17:23:20.963 [INFO ] [main] [beb64e38-4cc3-4fbf-a110-28c521bd9571] [getUpdatedAddress] Utils  resources.Utils - Request key is : address and the value is : Updating my address
-2021-06-02 17:23:21.001 [INFO ] [main] [384ca21f-f8f6-4747-9232-7e43c4e5484e] [deleteNonExistPlace] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - deleteNonExistPlace is initialzed
-2021-06-02 17:23:21.001 [INFO ] [main] [384ca21f-f8f6-4747-9232-7e43c4e5484e] [deleteNonExistPlace] APIactions  resources.APIactions - Initialize deleteAPI and constructing the url, with the place id = abcd
-2021-06-02 17:23:21.002 [INFO ] [main] [384ca21f-f8f6-4747-9232-7e43c4e5484e] [deleteNonExistPlace] Utils  resources.Utils - Url constructed with the resource :deletePlaceAPI == /maps/api/place/delete/json
-2021-06-02 17:23:23.459 [DEBUG] [main] [384ca21f-f8f6-4747-9232-7e43c4e5484e] [deleteNonExistPlace] Utils  resources.Utils - Validation happen successfully with the status code 404 
-2021-06-02 17:23:23.462 [INFO ] [main] [384ca21f-f8f6-4747-9232-7e43c4e5484e] [deleteNonExistPlace] Utils  resources.Utils - Url constructed with the resource :deletePlaceAPI == /maps/api/place/delete/json
-2021-06-02 17:23:23.463 [INFO ] [main] [384ca21f-f8f6-4747-9232-7e43c4e5484e] [deleteNonExistPlace] Utils  resources.Utils - 
 
-################ Request,Status code,Response Details ##################
+2021-06-03 12:37:21.467 [INFO ] [main] [07b40715-fea7-4ffb-8043-bfe817967521] [getUpdatedAddress] Utils  resources.Utils - Expected is (200) and Actual status code (200) is matched and validated successfully
+2021-06-03 12:37:21.501 [INFO ] [main] [07b40715-fea7-4ffb-8043-bfe817967521] [getUpdatedAddress] Utils  resources.Utils - Expected value is (Updating my address) and Actual status key value (Updating my address) is matched and validated successfully
+2021-06-03 12:37:21.501 [INFO ] [main] [07b40715-fea7-4ffb-8043-bfe817967521] [getUpdatedAddress] Utils  resources.Utils - 
 
-**************************** Header Details ***************************
+
+##########################################################################################################
+***************   getUpdatedAddress is Pass ****************
+##########################################################################################################
+
+
+
+
+
+
+2021-06-03 12:37:21.502 [INFO ] [main] [07b40715-fea7-4ffb-8043-bfe817967521] [getUpdatedAddress] Utils  resources.Utils - 
+
+
+##########################################################################################################
+***************   deleteNonExistPlace   Test cases execution started ****************
+##########################################################################################################
+2021-06-03 12:37:21.502 [INFO ] [main] [7221ad11-2f7a-4bab-bd4b-434668a7b140] [deleteNonExistPlace] APIactions  resources.APIactions - Initialize deleteAPI and constructing the url, with the place id = abcd
+2021-06-03 12:37:21.504 [INFO ] [main] [7221ad11-2f7a-4bab-bd4b-434668a7b140] [deleteNonExistPlace] Utils  resources.Utils - Url constructed with the resource :deletePlaceAPI == /maps/api/place/delete/json
+2021-06-03 12:37:24.020 [INFO ] [main] [7221ad11-2f7a-4bab-bd4b-434668a7b140] [deleteNonExistPlace] Utils  resources.Utils - Url constructed with the resource :deletePlaceAPI == /maps/api/place/delete/json
+2021-06-03 12:37:24.021 [INFO ] [main] [7221ad11-2f7a-4bab-bd4b-434668a7b140] [deleteNonExistPlace] Utils  resources.Utils - 
+
+====================== Request,Status code,Response Details =========================
+
+------------------------
+**** Header Details ****
+------------------------
 Request method: DELETE
 Request URI: https://rahulshettyacademy.com/maps/api/place/delete/json
 Proxy: null
@@ -140,273 +217,56 @@ Content-Type=application/json; charset=UTF-8
 Cookies: 
 Multiparts: []
 
-**************************** Body Details ****************************
+----------------------
+**** Body Details ****
+----------------------
 body is: {
     "place_id":"abcd"
 }
 
-**************************** Status code ****************************
+---------------------
+**** Status code ****
+---------------------
 Response Status code: 404
 
-**************************** Response Details ****************************
+--------------------------
+**** Response Details ****
+--------------------------
 {"msg":"Delete operation failed, looks like the data doesn't exists"}
 
-##################################### END ##################################
 
-2021-06-02 17:23:23.464 [INFO ] [main] [384ca21f-f8f6-4747-9232-7e43c4e5484e] [deleteNonExistPlace] Utils  resources.Utils - Response is : {"msg":"Delete operation failed, looks like the data doesn't exists"}
-2021-06-02 17:23:23.494 [INFO ] [main] [384ca21f-f8f6-4747-9232-7e43c4e5484e] [deleteNonExistPlace] Utils  resources.Utils - Request key is : msg and the value is : Delete operation failed, looks like the data doesn't exists
-2021-06-02 17:29:40.045 [INFO ] [main] [148e79e3-8778-431e-8e7e-2e2cdbdc0f2d] [deleteNonExistPlace] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - deleteNonExistPlace is initialzed
-2021-06-02 17:30:46.039 [INFO ] [main] [01f93275-9c2d-48aa-894a-ee807ccccbff] [deleteNonExistPlace] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - deleteNonExistPlace is initialzed
-2021-06-02 17:31:04.783 [INFO ] [main] [9b0c0060-9334-4556-8af6-ee7c42c95460] [addPlaceUsingJsonFile] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - addPlaceUsingJsonFile is initialzed
-2021-06-02 17:31:04.789 [INFO ] [main] [9b0c0060-9334-4556-8af6-ee7c42c95460] [addPlaceUsingJsonFile] APIactions  resources.APIactions - Initialize addAPI and constructing the url, body is taking from the  source type : jsonfile
-2021-06-02 17:31:05.617 [DEBUG] [main] [9b0c0060-9334-4556-8af6-ee7c42c95460] [addPlaceUsingJsonFile] Utils  resources.Utils - Log file created with the name logging2021_06_02_17_31_05.txt
-2021-06-02 17:31:05.624 [INFO ] [main] [9b0c0060-9334-4556-8af6-ee7c42c95460] [addPlaceUsingJsonFile] Utils  resources.Utils - Fetching the url from the properties file, Url : https://rahulshettyacademy.com
-2021-06-02 17:31:05.890 [INFO ] [main] [9b0c0060-9334-4556-8af6-ee7c42c95460] [addPlaceUsingJsonFile] Utils  resources.Utils - Url constructed with the resource :AddPlaceAPI == /maps/api/place/add/json
-2021-06-02 17:31:08.902 [DEBUG] [main] [9b0c0060-9334-4556-8af6-ee7c42c95460] [addPlaceUsingJsonFile] Utils  resources.Utils - Validation happen successfully with the status code 200 
-2021-06-02 17:31:08.920 [INFO ] [main] [9b0c0060-9334-4556-8af6-ee7c42c95460] [addPlaceUsingJsonFile] Utils  resources.Utils - Url constructed with the resource :AddPlaceAPI == /maps/api/place/add/json
-2021-06-02 17:31:08.921 [INFO ] [main] [9b0c0060-9334-4556-8af6-ee7c42c95460] [addPlaceUsingJsonFile] Utils  resources.Utils - 
 
-################ Request,Status code,Response Details ##################
+2021-06-03 12:37:24.022 [INFO ] [main] [7221ad11-2f7a-4bab-bd4b-434668a7b140] [deleteNonExistPlace] Utils  resources.Utils - Expected is (404) and Actual status code (404) is matched and validated successfully
+2021-06-03 12:37:24.049 [ERROR] [main] [7221ad11-2f7a-4bab-bd4b-434668a7b140] [deleteNonExistPlace] Utils  resources.Utils - Expected value is (Delete operation failed, looks like the data doesn't exists123) and Actual status code (Delete operation failed, looks like the data doesn't exists) is not matched and validation failed
+2021-06-03 12:37:24.062 [ERROR] [main] [7221ad11-2f7a-4bab-bd4b-434668a7b140] [deleteNonExistPlace] Utils  resources.Utils - Error Log : org.junit.ComparisonFailure: expected:<... data doesn't exists[123]> but was:<... data doesn't exists[]>
+2021-06-03 12:37:24.062 [INFO ] [main] [7221ad11-2f7a-4bab-bd4b-434668a7b140] [deleteNonExistPlace] Utils  resources.Utils - 
 
-**************************** Header Details ***************************
-Request method: POST
-Request URI: https://rahulshettyacademy.com/maps/api/place/add/json
-Proxy: null
-Request params: {key=qaclick123}
-Form params: {}
-Headers: Accept=*/*
-Content-Type=application/json; charset=UTF-8
-Cookies: 
-Multiparts: []
 
-**************************** Body Details ****************************
-body is: {
-  "location": {
-    "lat": -38.383494,
-    "lng": 33.427362
-  },
-  "accuracy": 50,
-  "name": "Using Json file",
-  "phone_number": "(+91) 983 893 3937",
-  "address": "29, side layout, cohen 09",
-  "types": [
-    "shoe park",
-    "shop"
-  ],
-  "website": "http://google.com",
-  "language": "French-IN"
-}
+##########################################################################################################
+***************   deleteNonExistPlace is Fail ****************
+##########################################################################################################
 
-**************************** Status code ****************************
-Response Status code: 200
 
-**************************** Response Details ****************************
-{"status":"OK","place_id":"9e7a394d25aa67588448ba55626e2168","scope":"APP","reference":"6624c23b751535540a09e4ad6eac880e6624c23b751535540a09e4ad6eac880e","id":"6624c23b751535540a09e4ad6eac880e"}
 
-##################################### END ##################################
 
-2021-06-02 17:31:08.937 [INFO ] [main] [0c121c3e-c7f3-4f51-a498-1b444bdac298] [updatePlaceApi] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - updatePlaceApi is initialzed
-2021-06-02 17:31:08.944 [INFO ] [main] [0c121c3e-c7f3-4f51-a498-1b444bdac298] [updatePlaceApi] Utils  resources.Utils - Response is : {"status":"OK","place_id":"9e7a394d25aa67588448ba55626e2168","scope":"APP","reference":"6624c23b751535540a09e4ad6eac880e6624c23b751535540a09e4ad6eac880e","id":"6624c23b751535540a09e4ad6eac880e"}
-2021-06-02 17:31:09.978 [INFO ] [main] [0c121c3e-c7f3-4f51-a498-1b444bdac298] [updatePlaceApi] Utils  resources.Utils - Request key is : place_id and the value is : 9e7a394d25aa67588448ba55626e2168
-2021-06-02 17:31:09.991 [INFO ] [main] [0c121c3e-c7f3-4f51-a498-1b444bdac298] [updatePlaceApi] APIactions  resources.APIactions - Initialize updateAPI and constructing the url, with the place id = 9e7a394d25aa67588448ba55626e2168 , address = Updating my address
-2021-06-02 17:31:09.997 [INFO ] [main] [0c121c3e-c7f3-4f51-a498-1b444bdac298] [updatePlaceApi] Utils  resources.Utils - Url constructed with the resource :updatePlaceAPI == /maps/api/place/update/json
-2021-06-02 17:31:12.581 [DEBUG] [main] [0c121c3e-c7f3-4f51-a498-1b444bdac298] [updatePlaceApi] Utils  resources.Utils - Validation happen successfully with the status code 200 
-2021-06-02 17:31:12.585 [INFO ] [main] [0c121c3e-c7f3-4f51-a498-1b444bdac298] [updatePlaceApi] Utils  resources.Utils - Url constructed with the resource :updatePlaceAPI == /maps/api/place/update/json
-2021-06-02 17:31:12.586 [INFO ] [main] [0c121c3e-c7f3-4f51-a498-1b444bdac298] [updatePlaceApi] Utils  resources.Utils - 
 
-################ Request,Status code,Response Details ##################
 
-**************************** Header Details ***************************
-Request method: PUT
-Request URI: https://rahulshettyacademy.com/maps/api/place/update/json
-Proxy: null
-Request params: {key=qaclick123}
-Form params: {}
-Headers: Accept=*/*
-Content-Type=application/json; charset=UTF-8
-Cookies: 
-Multiparts: []
+2021-06-03 12:37:24.063 [INFO ] [main] [7221ad11-2f7a-4bab-bd4b-434668a7b140] [deleteNonExistPlace] Utils  resources.Utils - 
 
-**************************** Body Details ****************************
-body is: {
-"place_id":"9e7a394d25aa67588448ba55626e2168",
-"address":"Updating my address",
-"key":"qaclick123"
-}
 
-**************************** Status code ****************************
-Response Status code: 200
+##########################################################################################################
+***************   deleteplace   Test cases execution started ****************
+##########################################################################################################
+2021-06-03 12:37:24.063 [INFO ] [main] [84d48ad1-2a84-4f88-9eb4-901fb2a93f23] [deleteplace] APIactions  resources.APIactions - Initialize deleteAPI and constructing the url, with the place id = 3332183070043542a2004b820162fc69
+2021-06-03 12:37:24.064 [INFO ] [main] [84d48ad1-2a84-4f88-9eb4-901fb2a93f23] [deleteplace] Utils  resources.Utils - Url constructed with the resource :deletePlaceAPI == /maps/api/place/delete/json
+2021-06-03 12:37:28.278 [INFO ] [main] [84d48ad1-2a84-4f88-9eb4-901fb2a93f23] [deleteplace] Utils  resources.Utils - Url constructed with the resource :deletePlaceAPI == /maps/api/place/delete/json
+2021-06-03 12:37:28.279 [INFO ] [main] [84d48ad1-2a84-4f88-9eb4-901fb2a93f23] [deleteplace] Utils  resources.Utils - 
 
-**************************** Response Details ****************************
-{"msg":"Address successfully updated"}
+====================== Request,Status code,Response Details =========================
 
-##################################### END ##################################
-
-2021-06-02 17:31:12.587 [INFO ] [main] [0c121c3e-c7f3-4f51-a498-1b444bdac298] [updatePlaceApi] Utils  resources.Utils - Response is : {"msg":"Address successfully updated"}
-2021-06-02 17:31:12.612 [INFO ] [main] [0c121c3e-c7f3-4f51-a498-1b444bdac298] [updatePlaceApi] Utils  resources.Utils - Request key is : msg and the value is : Address successfully updated
-2021-06-02 17:31:12.625 [INFO ] [main] [5fda607e-a844-4b08-a6b2-a8918b14f85e] [getUpdatedAddress] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - getUpdatedAddress is initialzed
-2021-06-02 17:31:12.625 [INFO ] [main] [5fda607e-a844-4b08-a6b2-a8918b14f85e] [getUpdatedAddress] APIactions  resources.APIactions - Initialize getAPI and constructing the url along with a query param, with the place id = 9e7a394d25aa67588448ba55626e2168
-2021-06-02 17:31:12.627 [INFO ] [main] [5fda607e-a844-4b08-a6b2-a8918b14f85e] [getUpdatedAddress] Utils  resources.Utils - Url constructed with the resource :getPlaceAPI == /maps/api/place/get/json
-2021-06-02 17:31:14.810 [DEBUG] [main] [5fda607e-a844-4b08-a6b2-a8918b14f85e] [getUpdatedAddress] Utils  resources.Utils - Validation happen successfully with the status code 200 
-2021-06-02 17:31:14.811 [INFO ] [main] [5fda607e-a844-4b08-a6b2-a8918b14f85e] [getUpdatedAddress] Utils  resources.Utils - Url constructed with the resource :getPlaceAPI == /maps/api/place/get/json
-2021-06-02 17:31:14.811 [INFO ] [main] [5fda607e-a844-4b08-a6b2-a8918b14f85e] [getUpdatedAddress] Utils  resources.Utils - 
-
-################ Request,Status code,Response Details ##################
-
-**************************** Header Details ***************************
-Request method: GET
-Request URI: https://rahulshettyacademy.com/maps/api/place/get/json
-Proxy: null
-Request params: {key=qaclick123, place_id=9e7a394d25aa67588448ba55626e2168}
-Form params: {}
-Headers: Accept=*/*
-Content-Type=application/json; charset=UTF-8
-Cookies: 
-Multiparts: []
-
-**************************** Body Details ****************************
-body is: null
-
-**************************** Status code ****************************
-Response Status code: 200
-
-**************************** Response Details ****************************
-{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Using Json file","phone_number":"(+91) 983 893 3937","address":"Updating my address","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
-
-##################################### END ##################################
-
-2021-06-02 17:31:14.812 [INFO ] [main] [5fda607e-a844-4b08-a6b2-a8918b14f85e] [getUpdatedAddress] Utils  resources.Utils - Response is : {"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Using Json file","phone_number":"(+91) 983 893 3937","address":"Updating my address","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
-2021-06-02 17:31:14.827 [INFO ] [main] [5fda607e-a844-4b08-a6b2-a8918b14f85e] [getUpdatedAddress] Utils  resources.Utils - Request key is : address and the value is : Updating my address
-2021-06-02 17:33:30.261 [INFO ] [main] [] [] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - addPlaceUsingJsonFile is initialzed
-2021-06-02 17:33:30.265 [INFO ] [main] [] [] APIactions  resources.APIactions - Initialize addAPI and constructing the url, body is taking from the  source type : jsonfile
-2021-06-02 17:33:30.964 [DEBUG] [main] [] [] Utils  resources.Utils - Log file created with the name logging2021_06_02_17_33_30.txt
-2021-06-02 17:33:30.970 [INFO ] [main] [] [] Utils  resources.Utils - Fetching the url from the properties file, Url : https://rahulshettyacademy.com
-2021-06-02 17:33:31.146 [INFO ] [main] [] [] Utils  resources.Utils - Url constructed with the resource :AddPlaceAPI == /maps/api/place/add/json
-2021-06-02 17:33:32.972 [DEBUG] [main] [] [] Utils  resources.Utils - Validation happen successfully with the status code 200 
-2021-06-02 17:33:32.982 [INFO ] [main] [] [] Utils  resources.Utils - Url constructed with the resource :AddPlaceAPI == /maps/api/place/add/json
-2021-06-02 17:33:32.983 [INFO ] [main] [] [] Utils  resources.Utils - 
-
-################ Request,Status code,Response Details ##################
-
-**************************** Header Details ***************************
-Request method: POST
-Request URI: https://rahulshettyacademy.com/maps/api/place/add/json
-Proxy: null
-Request params: {key=qaclick123}
-Form params: {}
-Headers: Accept=*/*
-Content-Type=application/json; charset=UTF-8
-Cookies: 
-Multiparts: []
-
-**************************** Body Details ****************************
-body is: {
-  "location": {
-    "lat": -38.383494,
-    "lng": 33.427362
-  },
-  "accuracy": 50,
-  "name": "Using Json file",
-  "phone_number": "(+91) 983 893 3937",
-  "address": "29, side layout, cohen 09",
-  "types": [
-    "shoe park",
-    "shop"
-  ],
-  "website": "http://google.com",
-  "language": "French-IN"
-}
-
-**************************** Status code ****************************
-Response Status code: 200
-
-**************************** Response Details ****************************
-{"status":"OK","place_id":"943f67ced3aafa202b653bf24f66bfe7","scope":"APP","reference":"16f3df2b6dbc60745ccf225eb064463b16f3df2b6dbc60745ccf225eb064463b","id":"16f3df2b6dbc60745ccf225eb064463b"}
-
-##################################### END ##################################
-
-2021-06-02 17:33:32.989 [INFO ] [main] [] [] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - updatePlaceApi is initialzed
-2021-06-02 17:33:32.992 [INFO ] [main] [] [] Utils  resources.Utils - Response is : {"status":"OK","place_id":"943f67ced3aafa202b653bf24f66bfe7","scope":"APP","reference":"16f3df2b6dbc60745ccf225eb064463b16f3df2b6dbc60745ccf225eb064463b","id":"16f3df2b6dbc60745ccf225eb064463b"}
-2021-06-02 17:33:33.579 [INFO ] [main] [] [] Utils  resources.Utils - Request key is : place_id and the value is : 943f67ced3aafa202b653bf24f66bfe7
-2021-06-02 17:33:33.592 [INFO ] [main] [] [] APIactions  resources.APIactions - Initialize updateAPI and constructing the url, with the place id = 943f67ced3aafa202b653bf24f66bfe7 , address = Updating my address
-2021-06-02 17:33:33.596 [INFO ] [main] [] [] Utils  resources.Utils - Url constructed with the resource :updatePlaceAPI == /maps/api/place/update/json
-2021-06-02 17:33:36.256 [DEBUG] [main] [] [] Utils  resources.Utils - Validation happen successfully with the status code 200 
-2021-06-02 17:33:36.259 [INFO ] [main] [] [] Utils  resources.Utils - Url constructed with the resource :updatePlaceAPI == /maps/api/place/update/json
-2021-06-02 17:33:36.260 [INFO ] [main] [] [] Utils  resources.Utils - 
-
-################ Request,Status code,Response Details ##################
-
-**************************** Header Details ***************************
-Request method: PUT
-Request URI: https://rahulshettyacademy.com/maps/api/place/update/json
-Proxy: null
-Request params: {key=qaclick123}
-Form params: {}
-Headers: Accept=*/*
-Content-Type=application/json; charset=UTF-8
-Cookies: 
-Multiparts: []
-
-**************************** Body Details ****************************
-body is: {
-"place_id":"943f67ced3aafa202b653bf24f66bfe7",
-"address":"Updating my address",
-"key":"qaclick123"
-}
-
-**************************** Status code ****************************
-Response Status code: 200
-
-**************************** Response Details ****************************
-{"msg":"Address successfully updated"}
-
-##################################### END ##################################
-
-2021-06-02 17:33:36.261 [INFO ] [main] [] [] Utils  resources.Utils - Response is : {"msg":"Address successfully updated"}
-2021-06-02 17:33:36.291 [INFO ] [main] [] [] Utils  resources.Utils - Request key is : msg and the value is : Address successfully updated
-2021-06-02 17:33:36.325 [INFO ] [main] [] [] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - getUpdatedAddress is initialzed
-2021-06-02 17:33:36.325 [INFO ] [main] [] [] APIactions  resources.APIactions - Initialize getAPI and constructing the url along with a query param, with the place id = 943f67ced3aafa202b653bf24f66bfe7
-2021-06-02 17:33:36.328 [INFO ] [main] [] [] Utils  resources.Utils - Url constructed with the resource :getPlaceAPI == /maps/api/place/get/json
-2021-06-02 17:33:38.493 [DEBUG] [main] [] [] Utils  resources.Utils - Validation happen successfully with the status code 200 
-2021-06-02 17:33:38.495 [INFO ] [main] [] [] Utils  resources.Utils - Url constructed with the resource :getPlaceAPI == /maps/api/place/get/json
-2021-06-02 17:33:38.496 [INFO ] [main] [] [] Utils  resources.Utils - 
-
-################ Request,Status code,Response Details ##################
-
-**************************** Header Details ***************************
-Request method: GET
-Request URI: https://rahulshettyacademy.com/maps/api/place/get/json
-Proxy: null
-Request params: {key=qaclick123, place_id=943f67ced3aafa202b653bf24f66bfe7}
-Form params: {}
-Headers: Accept=*/*
-Content-Type=application/json; charset=UTF-8
-Cookies: 
-Multiparts: []
-
-**************************** Body Details ****************************
-body is: null
-
-**************************** Status code ****************************
-Response Status code: 200
-
-**************************** Response Details ****************************
-{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Using Json file","phone_number":"(+91) 983 893 3937","address":"Updating my address","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
-
-##################################### END ##################################
-
-2021-06-02 17:33:38.497 [INFO ] [main] [] [] Utils  resources.Utils - Response is : {"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Using Json file","phone_number":"(+91) 983 893 3937","address":"Updating my address","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
-2021-06-02 17:33:38.520 [INFO ] [main] [] [] Utils  resources.Utils - Request key is : address and the value is : Updating my address
-2021-06-02 17:33:38.529 [INFO ] [main] [] [] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - deleteNonExistPlace is initialzed
-2021-06-02 17:33:38.530 [INFO ] [main] [] [] APIactions  resources.APIactions - Initialize deleteAPI and constructing the url, with the place id = abcd
-2021-06-02 17:33:38.531 [INFO ] [main] [] [] Utils  resources.Utils - Url constructed with the resource :deletePlaceAPI == /maps/api/place/delete/json
-2021-06-02 17:33:41.062 [DEBUG] [main] [] [] Utils  resources.Utils - Validation happen successfully with the status code 404 
-2021-06-02 17:33:41.065 [INFO ] [main] [] [] Utils  resources.Utils - Url constructed with the resource :deletePlaceAPI == /maps/api/place/delete/json
-2021-06-02 17:33:41.065 [INFO ] [main] [] [] Utils  resources.Utils - 
-
-################ Request,Status code,Response Details ##################
-
-**************************** Header Details ***************************
+------------------------
+**** Header Details ****
+------------------------
 Request method: DELETE
 Request URI: https://rahulshettyacademy.com/maps/api/place/delete/json
 Proxy: null
@@ -417,261 +277,36 @@ Content-Type=application/json; charset=UTF-8
 Cookies: 
 Multiparts: []
 
-**************************** Body Details ****************************
+----------------------
+**** Body Details ****
+----------------------
 body is: {
-    "place_id":"abcd"
+    "place_id":"3332183070043542a2004b820162fc69"
 }
 
-**************************** Status code ****************************
-Response Status code: 404
-
-**************************** Response Details ****************************
-{"msg":"Delete operation failed, looks like the data doesn't exists"}
-
-##################################### END ##################################
-
-2021-06-02 17:33:41.067 [INFO ] [main] [] [] Utils  resources.Utils - Response is : {"msg":"Delete operation failed, looks like the data doesn't exists"}
-2021-06-02 17:33:41.093 [INFO ] [main] [] [] Utils  resources.Utils - Request key is : msg and the value is : Delete operation failed, looks like the data doesn't exists
-2021-06-02 17:37:48.473 [INFO ] [main] [dde9a782-993c-41ee-bbc9-5d3cc39f21f8] [addPlaceUsingJsonFile] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - addPlaceUsingJsonFile is initialzed
-2021-06-02 17:37:48.480 [INFO ] [main] [dde9a782-993c-41ee-bbc9-5d3cc39f21f8] [addPlaceUsingJsonFile] APIactions  resources.APIactions - Initialize addAPI and constructing the url, body is taking from the  source type : jsonfile
-2021-06-02 17:37:49.125 [DEBUG] [main] [dde9a782-993c-41ee-bbc9-5d3cc39f21f8] [addPlaceUsingJsonFile] Utils  resources.Utils - Log file created with the name logging2021_06_02_17_37_49.txt
-2021-06-02 17:37:49.133 [INFO ] [main] [dde9a782-993c-41ee-bbc9-5d3cc39f21f8] [addPlaceUsingJsonFile] Utils  resources.Utils - Fetching the url from the properties file, Url : https://rahulshettyacademy.com
-2021-06-02 17:37:49.401 [INFO ] [main] [dde9a782-993c-41ee-bbc9-5d3cc39f21f8] [addPlaceUsingJsonFile] Utils  resources.Utils - Url constructed with the resource :AddPlaceAPI == /maps/api/place/add/json
-2021-06-02 17:37:52.535 [DEBUG] [main] [dde9a782-993c-41ee-bbc9-5d3cc39f21f8] [addPlaceUsingJsonFile] Utils  resources.Utils - Validation happen successfully with the status code 200 
-2021-06-02 17:37:52.551 [INFO ] [main] [dde9a782-993c-41ee-bbc9-5d3cc39f21f8] [addPlaceUsingJsonFile] Utils  resources.Utils - Url constructed with the resource :AddPlaceAPI == /maps/api/place/add/json
-2021-06-02 17:37:52.552 [INFO ] [main] [dde9a782-993c-41ee-bbc9-5d3cc39f21f8] [addPlaceUsingJsonFile] Utils  resources.Utils - 
-
-################ Request,Status code,Response Details ##################
-
-**************************** Header Details ***************************
-Request method: POST
-Request URI: https://rahulshettyacademy.com/maps/api/place/add/json
-Proxy: null
-Request params: {key=qaclick123}
-Form params: {}
-Headers: Accept=*/*
-Content-Type=application/json; charset=UTF-8
-Cookies: 
-Multiparts: []
-
-**************************** Body Details ****************************
-body is: {
-  "location": {
-    "lat": -38.383494,
-    "lng": 33.427362
-  },
-  "accuracy": 50,
-  "name": "Using Json file",
-  "phone_number": "(+91) 983 893 3937",
-  "address": "29, side layout, cohen 09",
-  "types": [
-    "shoe park",
-    "shop"
-  ],
-  "website": "http://google.com",
-  "language": "French-IN"
-}
-
-**************************** Status code ****************************
+---------------------
+**** Status code ****
+---------------------
 Response Status code: 200
 
-**************************** Response Details ****************************
-{"status":"OK","place_id":"c44e5ad753681ac7afb71af6881121fe","scope":"APP","reference":"e8c59b7d81cf1d0795e85464f4256737e8c59b7d81cf1d0795e85464f4256737","id":"e8c59b7d81cf1d0795e85464f4256737"}
+--------------------------
+**** Response Details ****
+--------------------------
+{"status":"OK"}
 
-##################################### END ##################################
 
-2021-06-02 17:37:52.568 [INFO ] [main] [d9659fac-18da-4778-96ac-4f53c2363d4b] [updatePlaceApi] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - updatePlaceApi is initialzed
-2021-06-02 17:37:52.571 [INFO ] [main] [d9659fac-18da-4778-96ac-4f53c2363d4b] [updatePlaceApi] Utils  resources.Utils - Response is : {"status":"OK","place_id":"c44e5ad753681ac7afb71af6881121fe","scope":"APP","reference":"e8c59b7d81cf1d0795e85464f4256737e8c59b7d81cf1d0795e85464f4256737","id":"e8c59b7d81cf1d0795e85464f4256737"}
-2021-06-02 17:37:53.610 [INFO ] [main] [d9659fac-18da-4778-96ac-4f53c2363d4b] [updatePlaceApi] Utils  resources.Utils - Request key is : place_id and the value is : c44e5ad753681ac7afb71af6881121fe
-2021-06-02 17:37:53.624 [INFO ] [main] [d9659fac-18da-4778-96ac-4f53c2363d4b] [updatePlaceApi] APIactions  resources.APIactions - Initialize updateAPI and constructing the url, with the place id = c44e5ad753681ac7afb71af6881121fe , address = Updating my address
-2021-06-02 17:37:53.632 [INFO ] [main] [d9659fac-18da-4778-96ac-4f53c2363d4b] [updatePlaceApi] Utils  resources.Utils - Url constructed with the resource :updatePlaceAPI == /maps/api/place/update/json
-2021-06-02 17:37:56.115 [DEBUG] [main] [d9659fac-18da-4778-96ac-4f53c2363d4b] [updatePlaceApi] Utils  resources.Utils - Validation happen successfully with the status code 200 
-2021-06-02 17:37:56.116 [INFO ] [main] [d9659fac-18da-4778-96ac-4f53c2363d4b] [updatePlaceApi] Utils  resources.Utils - Url constructed with the resource :updatePlaceAPI == /maps/api/place/update/json
-2021-06-02 17:37:56.117 [INFO ] [main] [d9659fac-18da-4778-96ac-4f53c2363d4b] [updatePlaceApi] Utils  resources.Utils - 
 
-################ Request,Status code,Response Details ##################
+2021-06-03 12:37:28.279 [INFO ] [main] [84d48ad1-2a84-4f88-9eb4-901fb2a93f23] [deleteplace] Utils  resources.Utils - Expected is (200) and Actual status code (200) is matched and validated successfully
+2021-06-03 12:37:28.289 [INFO ] [main] [84d48ad1-2a84-4f88-9eb4-901fb2a93f23] [deleteplace] Utils  resources.Utils - Expected value is (OK) and Actual status key value (OK) is matched and validated successfully
+2021-06-03 12:37:28.289 [INFO ] [main] [84d48ad1-2a84-4f88-9eb4-901fb2a93f23] [deleteplace] Utils  resources.Utils - 
 
-**************************** Header Details ***************************
-Request method: PUT
-Request URI: https://rahulshettyacademy.com/maps/api/place/update/json
-Proxy: null
-Request params: {key=qaclick123}
-Form params: {}
-Headers: Accept=*/*
-Content-Type=application/json; charset=UTF-8
-Cookies: 
-Multiparts: []
 
-**************************** Body Details ****************************
-body is: {
-"place_id":"c44e5ad753681ac7afb71af6881121fe",
-"address":"Updating my address",
-"key":"qaclick123"
-}
+##########################################################################################################
+***************   deleteplace is Pass ****************
+##########################################################################################################
 
-**************************** Status code ****************************
-Response Status code: 200
 
-**************************** Response Details ****************************
-{"msg":"Address successfully updated"}
 
-##################################### END ##################################
 
-2021-06-02 17:37:56.117 [INFO ] [main] [d9659fac-18da-4778-96ac-4f53c2363d4b] [updatePlaceApi] Utils  resources.Utils - Response is : {"msg":"Address successfully updated"}
-2021-06-02 17:37:56.127 [INFO ] [main] [d9659fac-18da-4778-96ac-4f53c2363d4b] [updatePlaceApi] Utils  resources.Utils - Request key is : msg and the value is : Address successfully updated
-2021-06-02 17:37:56.157 [INFO ] [main] [07830773-5283-4b6f-a16e-13f6be3e59cd] [getUpdatedAddress] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - getUpdatedAddress is initialzed
-2021-06-02 17:37:56.157 [INFO ] [main] [07830773-5283-4b6f-a16e-13f6be3e59cd] [getUpdatedAddress] APIactions  resources.APIactions - Initialize getAPI and constructing the url along with a query param, with the place id = c44e5ad753681ac7afb71af6881121fe
-2021-06-02 17:37:56.159 [INFO ] [main] [07830773-5283-4b6f-a16e-13f6be3e59cd] [getUpdatedAddress] Utils  resources.Utils - Url constructed with the resource :getPlaceAPI == /maps/api/place/get/json
-2021-06-02 17:37:58.178 [DEBUG] [main] [07830773-5283-4b6f-a16e-13f6be3e59cd] [getUpdatedAddress] Utils  resources.Utils - Validation happen successfully with the status code 200 
-2021-06-02 17:37:58.180 [INFO ] [main] [07830773-5283-4b6f-a16e-13f6be3e59cd] [getUpdatedAddress] Utils  resources.Utils - Url constructed with the resource :getPlaceAPI == /maps/api/place/get/json
-2021-06-02 17:37:58.181 [INFO ] [main] [07830773-5283-4b6f-a16e-13f6be3e59cd] [getUpdatedAddress] Utils  resources.Utils - 
 
-################ Request,Status code,Response Details ##################
 
-**************************** Header Details ***************************
-Request method: GET
-Request URI: https://rahulshettyacademy.com/maps/api/place/get/json
-Proxy: null
-Request params: {key=qaclick123, place_id=c44e5ad753681ac7afb71af6881121fe}
-Form params: {}
-Headers: Accept=*/*
-Content-Type=application/json; charset=UTF-8
-Cookies: 
-Multiparts: []
-
-**************************** Body Details ****************************
-body is: null
-
-**************************** Status code ****************************
-Response Status code: 200
-
-**************************** Response Details ****************************
-{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Using Json file","phone_number":"(+91) 983 893 3937","address":"Updating my address","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
-
-##################################### END ##################################
-
-2021-06-02 17:37:58.182 [INFO ] [main] [07830773-5283-4b6f-a16e-13f6be3e59cd] [getUpdatedAddress] Utils  resources.Utils - Response is : {"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Using Json file","phone_number":"(+91) 983 893 3937","address":"Updating my address","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
-2021-06-02 17:37:58.206 [INFO ] [main] [07830773-5283-4b6f-a16e-13f6be3e59cd] [getUpdatedAddress] Utils  resources.Utils - Request key is : address and the value is : Updating my address
-2021-06-02 17:37:58.226 [INFO ] [main] [e887e3e7-b944-469c-9e42-33bc0ae20731] [deleteNonExistPlace] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - deleteNonExistPlace is initialzed
-2021-06-02 17:37:58.226 [INFO ] [main] [e887e3e7-b944-469c-9e42-33bc0ae20731] [deleteNonExistPlace] APIactions  resources.APIactions - Initialize deleteAPI and constructing the url, with the place id = abcd
-2021-06-02 17:37:58.227 [INFO ] [main] [e887e3e7-b944-469c-9e42-33bc0ae20731] [deleteNonExistPlace] Utils  resources.Utils - Url constructed with the resource :deletePlaceAPI == /maps/api/place/delete/json
-2021-06-02 17:38:00.685 [DEBUG] [main] [e887e3e7-b944-469c-9e42-33bc0ae20731] [deleteNonExistPlace] Utils  resources.Utils - Validation happen successfully with the status code 404 
-2021-06-02 17:38:00.687 [INFO ] [main] [e887e3e7-b944-469c-9e42-33bc0ae20731] [deleteNonExistPlace] Utils  resources.Utils - Url constructed with the resource :deletePlaceAPI == /maps/api/place/delete/json
-2021-06-02 17:38:00.687 [INFO ] [main] [e887e3e7-b944-469c-9e42-33bc0ae20731] [deleteNonExistPlace] Utils  resources.Utils - 
-
-################ Request,Status code,Response Details ##################
-
-**************************** Header Details ***************************
-Request method: DELETE
-Request URI: https://rahulshettyacademy.com/maps/api/place/delete/json
-Proxy: null
-Request params: {key=qaclick123}
-Form params: {}
-Headers: Accept=*/*
-Content-Type=application/json; charset=UTF-8
-Cookies: 
-Multiparts: []
-
-**************************** Body Details ****************************
-body is: {
-    "place_id":"abcd"
-}
-
-**************************** Status code ****************************
-Response Status code: 404
-
-**************************** Response Details ****************************
-{"msg":"Delete operation failed, looks like the data doesn't exists"}
-
-##################################### END ##################################
-
-2021-06-02 17:38:00.688 [INFO ] [main] [e887e3e7-b944-469c-9e42-33bc0ae20731] [deleteNonExistPlace] Utils  resources.Utils - Response is : {"msg":"Delete operation failed, looks like the data doesn't exists"}
-2021-06-02 17:38:00.705 [INFO ] [main] [e887e3e7-b944-469c-9e42-33bc0ae20731] [deleteNonExistPlace] Utils  resources.Utils - Request key is : msg and the value is : Delete operation failed, looks like the data doesn't exists
-2021-06-02 17:39:20.348 [INFO ] [main] [e77c4d5a-4094-4527-876d-989d84d67c56] [addPlaceUsingJsonFile] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - addPlaceUsingJsonFile is initialzed
-2021-06-02 17:39:20.353 [INFO ] [main] [e77c4d5a-4094-4527-876d-989d84d67c56] [addPlaceUsingJsonFile] APIactions  resources.APIactions - Initialize addAPI and constructing the url, body is taking from the  source type : jsonfile
-2021-06-02 17:39:20.875 [DEBUG] [main] [e77c4d5a-4094-4527-876d-989d84d67c56] [addPlaceUsingJsonFile] Utils  resources.Utils - Log file created with the name logging2021_06_02_17_39_20.txt
-2021-06-02 17:39:20.880 [INFO ] [main] [e77c4d5a-4094-4527-876d-989d84d67c56] [addPlaceUsingJsonFile] Utils  resources.Utils - Fetching the url from the properties file, Url : https://rahulshettyacademy.com
-2021-06-02 17:39:21.046 [INFO ] [main] [e77c4d5a-4094-4527-876d-989d84d67c56] [addPlaceUsingJsonFile] Utils  resources.Utils - Url constructed with the resource :AddPlaceAPI == /maps/api/place/add/json
-2021-06-02 17:39:23.409 [DEBUG] [main] [e77c4d5a-4094-4527-876d-989d84d67c56] [addPlaceUsingJsonFile] Utils  resources.Utils - Validation happen successfully with the status code 200 
-2021-06-02 17:39:23.421 [INFO ] [main] [e77c4d5a-4094-4527-876d-989d84d67c56] [addPlaceUsingJsonFile] Utils  resources.Utils - Url constructed with the resource :AddPlaceAPI == /maps/api/place/add/json
-2021-06-02 17:39:23.422 [INFO ] [main] [e77c4d5a-4094-4527-876d-989d84d67c56] [addPlaceUsingJsonFile] Utils  resources.Utils - 
-
-################ Request,Status code,Response Details ##################
-
-**************************** Header Details ***************************
-Request method: POST
-Request URI: https://rahulshettyacademy.com/maps/api/place/add/json
-Proxy: null
-Request params: {key=qaclick123}
-Form params: {}
-Headers: Accept=*/*
-Content-Type=application/json; charset=UTF-8
-Cookies: 
-Multiparts: []
-
-**************************** Body Details ****************************
-body is: {
-  "location": {
-    "lat": -38.383494,
-    "lng": 33.427362
-  },
-  "accuracy": 50,
-  "name": "Using Json file",
-  "phone_number": "(+91) 983 893 3937",
-  "address": "29, side layout, cohen 09",
-  "types": [
-    "shoe park",
-    "shop"
-  ],
-  "website": "http://google.com",
-  "language": "French-IN"
-}
-
-**************************** Status code ****************************
-Response Status code: 200
-
-**************************** Response Details ****************************
-{"status":"OK","place_id":"5ef2ba5aec48623c5fea4986d139a287","scope":"APP","reference":"e311d45e2537e8ef40754c938b3b06dae311d45e2537e8ef40754c938b3b06da","id":"e311d45e2537e8ef40754c938b3b06da"}
-
-##################################### END ##################################
-
-2021-06-02 17:39:23.431 [INFO ] [main] [c73f8076-b4e8-4bff-94e7-89cfa8a48f7e] [updatePlaceApi] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - updatePlaceApi is initialzed
-2021-06-02 17:39:23.434 [INFO ] [main] [c73f8076-b4e8-4bff-94e7-89cfa8a48f7e] [updatePlaceApi] Utils  resources.Utils - Response is : {"status":"OK","place_id":"5ef2ba5aec48623c5fea4986d139a287","scope":"APP","reference":"e311d45e2537e8ef40754c938b3b06dae311d45e2537e8ef40754c938b3b06da","id":"e311d45e2537e8ef40754c938b3b06da"}
-2021-06-02 17:39:24.353 [INFO ] [main] [c73f8076-b4e8-4bff-94e7-89cfa8a48f7e] [updatePlaceApi] Utils  resources.Utils - Request key is : place_id and the value is : 5ef2ba5aec48623c5fea4986d139a287
-2021-06-02 17:39:24.374 [INFO ] [main] [c73f8076-b4e8-4bff-94e7-89cfa8a48f7e] [updatePlaceApi] APIactions  resources.APIactions - Initialize updateAPI and constructing the url, with the place id = 5ef2ba5aec48623c5fea4986d139a287 , address = Updating my address
-2021-06-02 17:39:24.382 [INFO ] [main] [c73f8076-b4e8-4bff-94e7-89cfa8a48f7e] [updatePlaceApi] Utils  resources.Utils - Url constructed with the resource :updatePlaceAPI == /maps/api/place/update/json
-2021-06-02 17:39:27.633 [DEBUG] [main] [c73f8076-b4e8-4bff-94e7-89cfa8a48f7e] [updatePlaceApi] Utils  resources.Utils - Validation happen successfully with the status code 200 
-2021-06-02 17:39:27.634 [INFO ] [main] [c73f8076-b4e8-4bff-94e7-89cfa8a48f7e] [updatePlaceApi] Utils  resources.Utils - Url constructed with the resource :updatePlaceAPI == /maps/api/place/update/json
-2021-06-02 17:39:27.635 [INFO ] [main] [c73f8076-b4e8-4bff-94e7-89cfa8a48f7e] [updatePlaceApi] Utils  resources.Utils - 
-
-################ Request,Status code,Response Details ##################
-
-**************************** Header Details ***************************
-Request method: PUT
-Request URI: https://rahulshettyacademy.com/maps/api/place/update/json
-Proxy: null
-Request params: {key=qaclick123}
-Form params: {}
-Headers: Accept=*/*
-Content-Type=application/json; charset=UTF-8
-Cookies: 
-Multiparts: []
-
-**************************** Body Details ****************************
-body is: {
-"place_id":"5ef2ba5aec48623c5fea4986d139a287",
-"address":"Updating my address",
-"key":"qaclick123"
-}
-
-**************************** Status code ****************************
-Response Status code: 200
-
-**************************** Response Details ****************************
-{"msg":"Address successfully updated"}
-
-##################################### END ##################################
-
-2021-06-02 17:39:27.635 [INFO ] [main] [c73f8076-b4e8-4bff-94e7-89cfa8a48f7e] [updatePlaceApi] Utils  resources.Utils - Response is : {"msg":"Address successfully updated"}
-2021-06-02 17:39:27.647 [INFO ] [main] [c73f8076-b4e8-4bff-94e7-89cfa8a48f7e] [updatePlaceApi] Utils  resources.Utils - Request key is : msg and the value is : Address successfully updated
-2021-06-02 17:40:24.485 [INFO ] [main] [94925b65-d53b-4204-ba20-b8e313598071] [deleteNonExistPlace] ValidateAddUpdateGetDeleteAPI  apiTest.ValidateAddUpdateGetDeleteAPI - deleteNonExistPlace is initialzed

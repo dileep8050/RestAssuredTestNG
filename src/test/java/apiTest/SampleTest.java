@@ -26,15 +26,19 @@ import resources.GetPayloadFile;
 import resources.Utils;
 
 public class SampleTest extends Utils  {
-	@BeforeTest
-    public void beforeTest() {
-        System.out.println("Before Test method");
-    }
-     
-	 @Test
-	 public void testCase() {
-		 
-	    }
+	
+	 @Test(groups = { "aaaa" },priority = 2)
+	 public void trytest()
+	 {
+		 try {
+			Assert.assertTrue(false);
+		    }
+		    
+		    catch (Throwable e) {
+		    	System.out.println("I know this should throw error"+e.getMessage());
+		      
+		    }
+	 }
 	 
 	  
 	    

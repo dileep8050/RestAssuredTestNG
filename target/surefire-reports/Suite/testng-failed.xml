@@ -7,16 +7,17 @@
   <test thread-count="5" verbose="0" name="Test(failed)">
     <groups>
       <run>
-        <include name="123"/>
-        <include name="123"/>
+        <include name="ssss"/>
+        <include name="ssss"/>
       </run>
     </groups>
     <classes>
-      <class name="apiTest.GoogleLocationPayload">
+      <class name="apiTest.ValidateAddUpdateGetDeleteAPI">
         <methods>
-          <include name="verifyGetplaceWithInvalidPlaceID"/>
+          <include name="deleteNonExistPlace"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- apiTest.GoogleLocationPayload -->
+      </class> <!-- apiTest.ValidateAddUpdateGetDeleteAPI -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
